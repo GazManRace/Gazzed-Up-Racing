@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Buildings/PlaxCity.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Sky Clouds.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -80
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 377.5, 670 )
+scale = Vector2( 0.299279, 0.572131 )
+texture = ExtResource( 1 )
+
+[node name="BG" parent="." instance=ExtResource( 2 )]

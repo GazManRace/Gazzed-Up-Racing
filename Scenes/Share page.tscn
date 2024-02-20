@@ -1,0 +1,77 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/UI/instagram.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/instagram hovered.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Social accounts.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/twitter idle.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/twitter hovered.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/facebook hovered.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/threads idle.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UI/Facebook idle.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UI/ArrowsIdle.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UI/Arrowhovered.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UI/threads hovered.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Share page links.gd" type="Script" id=12]
+[ext_resource path="res://Scenes/ParallaxBackground.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/UI/Gradient background.png" type="Texture" id=14]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 12 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 13 )]
+layer = 1
+
+[node name="BG" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="HomeBackground" type="Sprite" parent="BG"]
+modulate = Color( 1, 1, 1, 0.74902 )
+position = Vector2( 1406.81, 568.576 )
+scale = Vector2( 0.386523, 0.337591 )
+texture = ExtResource( 14 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SocialAccounts" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1067, 131.014 )
+scale = Vector2( 0.286891, 0.286891 )
+texture = ExtResource( 3 )
+
+[node name="Instagram" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 770, 292 )
+scale = Vector2( 0.525525, 0.524648 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 2 )
+
+[node name="Twitter" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 770, 493 )
+scale = Vector2( 0.525525, 0.524648 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 5 )
+
+[node name="Facebook" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 770, 705 )
+scale = Vector2( 0.525525, 0.524648 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 6 )
+
+[node name="Threads" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 770, 886 )
+scale = Vector2( 0.525525, 0.524648 )
+normal = ExtResource( 7 )
+pressed = ExtResource( 11 )
+
+[node name="Back" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 232, 160 )
+rotation = -3.14159
+scale = Vector2( 0.176509, 0.176509 )
+normal = ExtResource( 9 )
+pressed = ExtResource( 10 )
+
+[connection signal="pressed" from="CanvasLayer/Instagram" to="." method="_on_Instagram_pressed"]
+[connection signal="pressed" from="CanvasLayer/Twitter" to="." method="_on_Twitter_pressed"]
+[connection signal="pressed" from="CanvasLayer/Facebook" to="." method="_on_Facebook_pressed"]
+[connection signal="pressed" from="CanvasLayer/Threads" to="." method="_on_Threads_pressed"]
+[connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_Back_pressed"]

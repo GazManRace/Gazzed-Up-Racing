@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://music_controller.gd" type="Script" id=1]
+
+[node name="Soundtrack" type="AudioStreamPlayer"]
+volume_db = -8.727
+script = ExtResource( 1 )

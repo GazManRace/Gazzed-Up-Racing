@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/SelectionArea.gd" type="Script" id=1]
+
+[node name="Button" type="Button"]
+margin_top = 232.0
+margin_right = 322.0
+margin_bottom = 294.0
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]

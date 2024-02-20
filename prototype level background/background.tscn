@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/Blue sky.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1025.0
+margin_bottom = 597.0
+
+[node name="BlueSky" type="Sprite" parent="."]
+position = Vector2( 544, 299 )
+scale = Vector2( 0.312691, 0.312691 )
+texture = ExtResource( 1 )

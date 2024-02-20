@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 912.14 761.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffeb34;
+      }
+
+      .cls-2 {
+        fill: #ecbc29;
+      }
+
+      .cls-3 {
+        fill: #d99226;
+      }
+
+      .cls-4 {
+        fill: #f59c02;
+      }
+
+      .cls-5 {
+        fill: #bfbfbf;
+        opacity: .54;
+      }
+
+      .cls-6 {
+        fill: #fadc47;
+        stroke: #f6c915;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: BerlinSansFBDemi-Bold, 'Berlin Sans FB Demi';
+        font-size: 396px;
+        font-weight: 700;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-7 {
+        fill: #050505;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="356.14" cy="457.92" r="250"/>
+  <circle class="cls-1" cx="357.64" cy="459.42" r="207"/>
+  <circle class="cls-2" cx="356.64" cy="457.42" r="194"/>
+  <circle class="cls-3" cx="358.14" cy="458.92" r="181.5"/>
+  <text class="cls-7" transform="translate(203.6 585.6)"><tspan x="0" y="0">G</tspan></text>
+  <text class="cls-6" transform="translate(203.6 578.6)"><tspan x="0" y="0">G</tspan></text>
+  <path class="cls-5" d="m570.64,362.42c14,17,35,170,18,166s-32-183-18-166Z"/>
+</svg>

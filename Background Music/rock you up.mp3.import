@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rock you up.mp3-ee76b23df2b68a077e16755374e65db1.mp3str"
+
+[deps]
+
+source_file="res://Background Music/rock you up.mp3"
+dest_files=[ "res://.import/rock you up.mp3-ee76b23df2b68a077e16755374e65db1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

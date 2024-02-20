@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tunetank.com_1897_life-style_by_pillowvibes.mp3-479eda0b904c166f9b4e20664585929b.mp3str"
+
+[deps]
+
+source_file="res://Music/tunetank.com_1897_life-style_by_pillowvibes.mp3"
+dest_files=[ "res://.import/tunetank.com_1897_life-style_by_pillowvibes.mp3-479eda0b904c166f9b4e20664585929b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

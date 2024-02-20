@@ -1,0 +1,98 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/StaticBody.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Dirt Master/bike.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/1x/Asset 1.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Blue sky.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Collectables/GoldenCoin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scripts/Breakthrough.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Pause Menu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/UI/UpsideDown.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Collectables/Fuel.tscn" type="PackedScene" id=10]
+
+[sub_resource type="PhysicsMaterial" id=2]
+rough = true
+
+[sub_resource type="Curve2D" id=1]
+bake_interval = 100.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 294, 682, -122.537, 23.6664, 122.537, -23.6664, 514, 669, -77.4207, 16.0181, 77.4207, -16.0181, 639, 571, 0, 0, 0, 0, 742, 586, -4.17489, -24.0056, 4.17489, 24.0056, 769, 646, -254.626, -10.4641, 254.626, 10.4641, 976, 942, 0, 0, 0, 0, 1230, 870, -43.9766, 45.3444, 43.9766, -45.3444, 1281, 811, -21.8404, -108.853, 21.8404, 108.853, 1427, 878, -143.009, -3.48803, 143.009, 3.48803, 1632, 937, 0, 0, 0, 0, 1798, 862, -85.4297, 2.66968, 85.4297, -2.66968, 1902, 729, -101.591, 17.6537, 101.591, -17.6537, 2306, 982, -38.1467, 2.66968, 38.1467, -2.66968, 2607, 980, -34.7413, 0.400771, 34.7413, -0.400771, 2673, 951, -122.569, -2.47356, 122.569, 2.47356, 2786, 981, -196.326, 22.653, 196.326, -22.653, 3211, 867, -108.396, 22.9931, 108.396, -22.9931, 3588, 966, -94.3874, 56.6325, 94.3874, -56.6325, 3912, 771, -98.542, 13.1389, 98.542, -13.1389, 4209, 736, -101.938, -56.6325, 101.938, 56.6325, 8862, 716, 0, 0, 0, 0, 9036, 1275, 0, 0, 0, 0, 1904, 1266, 1.59332, 6.52074, -1.59332, -6.52074, -113, 1271, 0, 0, 0, 0, -96, 851, 0, 0, 0, 0, -215, 641, 0, 0, 0, 0, -129, 627, 0, 0, 0, 0, -89, 644, 0, 0, 0, 0, 82, 643, 0, 0, 0, 0, 188, 643, 0, 0, 0, 0, 209, 660, 0, 0, 0, 0, 242, 670, 0, 0, 0, 0, 269, 678, 0, 0, 0, 0, 294, 682, 0, 0, 0, 0, 294, 682, 0, 0, 0, 0, 294, 682 )
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="BlueSky" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.843137 )
+position = Vector2( 4589.5, 391 )
+scale = Vector2( 1.84133, 1 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource( 2 )
+script = ExtResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+color = Color( 0.329412, 0.203922, 0.0705882, 1 )
+polygon = PoolVector2Array( 167, 265, 394, 182, 684, 240, 873, 348, 792, 495, 429, 510, 184, 450 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+[node name="Path2D" type="Path2D" parent="StaticBody2D"]
+position = Vector2( -3, -5 )
+curve = SubResource( 1 )
+
+[node name="Line2D" type="Line2D" parent="StaticBody2D"]
+points = PoolVector2Array( 2565, 622, 2916, 411, 3212, 372, 3297, 388, 3383, 415, 3478, 428, 3757, 464, 3859, 471, 3935, 461, 3994, 444, 4069, 415, 4207, 326, 4280, 313, 4365, 316, 4624, 431, 4756, 540 )
+default_color = Color( 1, 1, 1, 1 )
+texture = ExtResource( 3 )
+texture_mode = 2
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+position = Vector2( -11, 599 )
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+offset_h = 1.0
+drag_margin_left = 0.34
+drag_margin_right = 0.02
+editor_draw_drag_margin = true
+
+[node name="UI" parent="." instance=ExtResource( 5 )]
+layer = 2
+
+[node name="Reset2" type="TouchScreenButton" parent="UI"]
+position = Vector2( 6, 114 )
+scale = Vector2( 0.0931034, 0.0931035 )
+normal = ExtResource( 9 )
+action = "Enter"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="GoldenCoin" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( 25, 629 )
+
+[node name="GoldenCoin2" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( 51, 631 )
+
+[node name="GoldenCoin3" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( 80, 632 )
+
+[node name="GoldenCoin4" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( 107, 632 )
+
+[node name="GoldenCoin5" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( 141, 631 )
+
+[node name="Fuel" parent="Node" instance=ExtResource( 10 )]
+position = Vector2( 372, 663 )
+
+[node name="PauseMenu" parent="." instance=ExtResource( 8 )]
+visible = false
+margin_left = -2.0
+margin_top = 1.0
+margin_right = -2.0
+margin_bottom = 1.0

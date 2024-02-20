@@ -1,0 +1,118 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/fonts/kenney_kenney-fonts/Fonts/Kenney High Square.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/UI/gold coin.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Pause Menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/UI/Pause Bar Idle.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/Pause Bar Hovered.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/fuel.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/UI.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/GameOverScreen.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/UI/pedal.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Accelarate.gd" type="Script" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 1, 0.00784314, 1 )
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+expand_margin_left = 1.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.0588235, 0.0509804, 0.0509804, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.203922, 0.113725, 0, 1 )
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+expand_margin_left = 3.0
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+anti_aliasing = false
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource( 7 )
+
+[node name="PauseMenu" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[node name="Coin" type="TextureRect" parent="."]
+margin_left = 4.0
+margin_top = 160.0
+margin_right = 57.0
+margin_bottom = 210.0
+rect_scale = Vector2( 2.74184, 2.74184 )
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Control" type="Control" parent="Coin"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Coin/Control"]
+margin_left = 68.5671
+margin_top = 14.5887
+margin_right = 88.5671
+margin_bottom = 49.5887
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+
+[node name="Fuel" type="TextureRect" parent="."]
+margin_left = 7.0
+margin_top = 4.0
+margin_right = 57.0
+margin_bottom = 57.0
+rect_scale = Vector2( 2.74184, 2.74184 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Control" type="Control" parent="Fuel"]
+margin_left = -1.09416
+margin_top = 56.8961
+margin_right = 38.9058
+margin_bottom = 96.8961
+
+[node name="ProgressBar" type="ProgressBar" parent="Fuel/Control"]
+margin_left = 56.8961
+margin_top = -37.9307
+margin_right = 216.896
+margin_bottom = -14.9307
+theme = SubResource( 2 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
+value = 50.0
+percent_visible = false
+
+[node name="PauseButton" type="TouchScreenButton" parent="."]
+position = Vector2( 1885, 17 )
+scale = Vector2( 0.146037, 0.124349 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 5 )
+
+[node name="GameOverScreen" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="back" type="TouchScreenButton" parent="."]
+position = Vector2( 24, 936 )
+scale = Vector2( 0.0282236, 0.0282236 )
+normal = ExtResource( 9 )
+
+[node name="forward" type="TouchScreenButton" parent="."]
+position = Vector2( 1784, 936 )
+scale = Vector2( 0.0307139, 0.0307139 )
+normal = ExtResource( 9 )
+script = ExtResource( 10 )
+
+[connection signal="pressed" from="PauseButton" to="PauseMenu" method="_on_PauseButton_pressed"]

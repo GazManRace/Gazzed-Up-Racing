@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lifestyle.mp3-456b8bd0b3c306f8b566cc935948920f.mp3str"
+
+[deps]
+
+source_file="res://Background Music/lifestyle.mp3"
+dest_files=[ "res://.import/lifestyle.mp3-456b8bd0b3c306f8b566cc935948920f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
