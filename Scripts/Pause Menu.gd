@@ -1,8 +1,6 @@
 extends Control
 
 var is_paused = false setget set_is_paused
-onready var pause_button = $"GameUI/PauseButton"
-
 
 func _on_PauseButton_pressed():
 	self.is_paused = !is_paused
@@ -20,9 +18,7 @@ func set_is_paused(value):
 	get_tree().paused = is_paused
 	visible = is_paused
 
-signal remove_cars
+
 
 func _on_Main_Menu_pressed():
-	BackTransition.change_scene("res://Scenes/Main.tscn")
-	emit_signal("remove_cars")
-	
+	BackTransition.change_scene("res://Scenes/main.tscn")

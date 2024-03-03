@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/UI/settings.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/back.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/parallax_background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Settings.gd" type="Script" id=4]
+[ext_resource path="res://Assets/UI/VolumeMuteOff.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/Gradient background.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/settings.gd" type="Script" id=9]
+[ext_resource path="res://Assets/UI/VolumeMuteOn.png" type="Texture" id=11]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 9 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
+layer = -1
+
+[node name="BG" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="HomeBackground" type="Sprite" parent="BG"]
+modulate = Color( 1, 1, 1, 0.74902 )
+position = Vector2( 1208.77, 611.038 )
+scale = Vector2( 0.305881, 0.285444 )
+texture = ExtResource( 8 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="Settings" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1391, 195 )
+scale = Vector2( 0.22126, 0.22126 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Volume" type="TouchScreenButton" parent="."]
+position = Vector2( 847, 431 )
+scale = Vector2( 0.184739, 0.184739 )
+normal = ExtResource( 11 )
+pressed = ExtResource( 6 )
+action = "Enter"
+
+[node name="Back" type="TouchScreenButton" parent="."]
+position = Vector2( 1017, 880 )
+scale = Vector2( 0.181269, 0.181269 )
+normal = ExtResource( 2 )
+pressed = ExtResource( 2 )
+action = "Enter"
+
+[connection signal="pressed" from="Volume" to="." method="_on_Volume_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

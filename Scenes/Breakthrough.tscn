@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/StaticBody.gd" type="Script" id=1]
-[ext_resource path="res://Levels/Dirt Master/bike.tscn" type="PackedScene" id=2]
+[ext_resource path="res://car_scenes/bike.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/1x/Asset 1.png" type="Texture" id=3]
 [ext_resource path="res://Textures/Blue sky.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Collectables/GoldenCoin.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/Breakthrough.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/Pause Menu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Collectables/golden_coin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scripts/level_1.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/UI/UpsideDown.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Collectables/Fuel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Collectables/fuel.tscn" type="PackedScene" id=10]
 
 [sub_resource type="PhysicsMaterial" id=2]
 rough = true

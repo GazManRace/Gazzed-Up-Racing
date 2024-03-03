@@ -5,8 +5,8 @@
 [ext_resource path="res://Assets/UI/Pause Bar Hovered.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/fuel.png" type="Texture" id=4]
 [ext_resource path="res://Assets/UI/Pause Bar Idle.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/GameOverScreen.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Pause Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/game_over_screen.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scripts/GameUI.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
@@ -42,6 +42,7 @@ expand_margin_bottom = 5.0
 anti_aliasing = false
 
 [node name="GameUI" type="CanvasLayer"]
+layer = 128
 script = ExtResource( 8 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 7 )]

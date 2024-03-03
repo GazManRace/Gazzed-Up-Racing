@@ -12,13 +12,6 @@ func _process(delta):
 
 var master_bus = AudioServer.get_bus_index("Master")
 
-func _ready():
-	
-	var tween = create_tween()
-	tween.set_parallel(true)
-	tween.tween_property($Sprite, "position", Vector2(0,560.251),300)
-	tween.tween_property($Sprite2, "position", Vector2(0,560.251),300)
-	#Soundtrack.change_random_song()
 
 func _on_Volume_pressed():
 	

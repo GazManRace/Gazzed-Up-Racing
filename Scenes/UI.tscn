@@ -2,12 +2,12 @@
 
 [ext_resource path="res://Assets/fonts/kenney_kenney-fonts/Fonts/Kenney High Square.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/UI/gold coin.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/Pause Menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/UI/Pause Bar Idle.png" type="Texture" id=4]
 [ext_resource path="res://Assets/UI/Pause Bar Hovered.png" type="Texture" id=5]
 [ext_resource path="res://Assets/UI/fuel.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/UI.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/GameOverScreen.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/game_over_screen.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/UI/pedal.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Accelarate.gd" type="Script" id=10]
 

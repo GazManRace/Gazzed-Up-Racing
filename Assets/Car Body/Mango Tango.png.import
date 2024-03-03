@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mango Tango.png-2c9df65d0bf1cac4413eff6738cc73a3.stex"
+path="res://.import/Mango Tango.png-359c2c8490b0d3ef9f289745f2f31888.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Car Body/Mango Tango.png"
-dest_files=[ "res://.import/Mango Tango.png-2c9df65d0bf1cac4413eff6738cc73a3.stex" ]
+source_file="res://Assets/car body/Mango Tango.png"
+dest_files=[ "res://.import/Mango Tango.png-359c2c8490b0d3ef9f289745f2f31888.stex" ]
 
 [params]
 

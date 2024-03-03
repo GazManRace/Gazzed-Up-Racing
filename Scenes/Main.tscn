@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/StartHover.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/settingsIdle.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/Quit1.png" type="Texture" id=4]
 [ext_resource path="res://Assets/UI/QuitH1.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/ParallaxBackground.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/parallax_background.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/UI/StartIdle.png" type="Texture" id=7]
 [ext_resource path="res://Assets/UI/Gazzed up title.png" type="Texture" id=8]
 [ext_resource path="res://Assets/UI/Shop hovered.png" type="Texture" id=10]
@@ -20,7 +20,7 @@ script = ExtResource( 1 )
 
 [node name="HomeBackground" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.74902 )
-position = Vector2( 2236.24, 1250.78 )
+position = Vector2( 2255.46, 1260.26 )
 scale = Vector2( 0.730004, 0.758403 )
 texture = ExtResource( 15 )
 
@@ -36,7 +36,7 @@ scale = Vector2( 0.268884, 0.273382 )
 texture = ExtResource( 8 )
 
 [node name="Start" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 1916, 832 )
+position = Vector2( 1908, 830 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 7 )
 pressed = ExtResource( 2 )
@@ -49,7 +49,7 @@ normal = ExtResource( 11 )
 action = "Enter"
 
 [node name="Settings" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 1009, 832 )
+position = Vector2( 1009, 844 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 3 )
 action = "Enter"

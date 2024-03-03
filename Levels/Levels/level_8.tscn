@@ -1,0 +1,928 @@
+[gd_scene load_steps=137 format=2]
+
+[ext_resource path="res://Scenes/sky_clouds.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=4]
+[ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
+[ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=6]
+[ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=7]
+[ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=8]
+[ext_resource path="res://Assets/UI/Backsoil.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/level_1.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/Next_Level_Indicator.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Next-level.tscn" type="PackedScene" id=12]
+
+[sub_resource type="Resource" id=119]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=120]
+script = ExtResource( 4 )
+position = Vector2( -45646.3, 4386.62 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 119 )
+
+[sub_resource type="Resource" id=121]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=122]
+script = ExtResource( 4 )
+position = Vector2( 54193.7, 4386.62 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 121 )
+
+[sub_resource type="Resource" id=123]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=124]
+script = ExtResource( 4 )
+position = Vector2( 54065.7, 27042.6 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 123 )
+
+[sub_resource type="Resource" id=125]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=126]
+script = ExtResource( 4 )
+position = Vector2( -45646.3, 4386.62 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 125 )
+
+[sub_resource type="Resource" id=127]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=128]
+script = ExtResource( 4 )
+position = Vector2( -45902.3, 27042.6 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 127 )
+
+[sub_resource type="Resource" id=129]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 4 )
+position = Vector2( -41961.5, 4357.99 )
+point_in = Vector2( -912.918, 0 )
+point_out = Vector2( 912.918, 0 )
+properties = SubResource( 129 )
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 4 )
+position = Vector2( -39379.1, 5710.44 )
+point_in = Vector2( -1113.48, 35.9189 )
+point_out = Vector2( 1113.48, -35.9189 )
+properties = SubResource( 131 )
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 4 )
+position = Vector2( -37762.7, 4489.21 )
+point_in = Vector2( -754.297, 179.594 )
+point_out = Vector2( 754.297, -179.594 )
+properties = SubResource( 133 )
+
+[sub_resource type="Resource" id=135]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=136]
+script = ExtResource( 4 )
+position = Vector2( -36146.4, 3627.15 )
+point_in = Vector2( -610.621, 107.757 )
+point_out = Vector2( 610.621, -107.757 )
+properties = SubResource( 135 )
+
+[sub_resource type="Resource" id=137]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=138]
+script = ExtResource( 4 )
+position = Vector2( -34530, 4489.21 )
+point_in = Vector2( -862.047, 0 )
+point_out = Vector2( 862.047, 0 )
+properties = SubResource( 137 )
+
+[sub_resource type="Resource" id=139]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=140]
+script = ExtResource( 4 )
+position = Vector2( -33093.3, 5315.34 )
+point_in = Vector2( -646.539, 35.9189 )
+point_out = Vector2( 646.539, -35.9189 )
+properties = SubResource( 139 )
+
+[sub_resource type="Resource" id=141]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=142]
+script = ExtResource( 4 )
+position = Vector2( -31620.6, 5997.79 )
+point_in = Vector2( -826.133, 35.9189 )
+point_out = Vector2( 826.133, -35.9189 )
+properties = SubResource( 141 )
+
+[sub_resource type="Resource" id=143]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=144]
+script = ExtResource( 4 )
+position = Vector2( -30219.8, 4812.48 )
+point_in = Vector2( -969.805, 323.269 )
+point_out = Vector2( 969.805, -323.269 )
+properties = SubResource( 143 )
+
+[sub_resource type="Resource" id=145]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=146]
+script = ExtResource( 4 )
+position = Vector2( -28603.4, 3591.24 )
+point_in = Vector2( -826.131, 179.594 )
+point_out = Vector2( 826.131, -179.594 )
+properties = SubResource( 145 )
+
+[sub_resource type="Resource" id=147]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=148]
+script = ExtResource( 4 )
+position = Vector2( -27023, 4812.47 )
+point_in = Vector2( -646.537, -35.9189 )
+point_out = Vector2( 646.537, 35.9189 )
+properties = SubResource( 147 )
+
+[sub_resource type="Resource" id=149]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=150]
+script = ExtResource( 4 )
+position = Vector2( -25119.3, 3734.91 )
+point_in = Vector2( -862.051, 107.757 )
+point_out = Vector2( 862.051, -107.757 )
+properties = SubResource( 149 )
+
+[sub_resource type="Resource" id=151]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=152]
+script = ExtResource( 4 )
+position = Vector2( -23718.5, 2549.59 )
+point_in = Vector2( -862.051, 107.757 )
+point_out = Vector2( 862.051, -107.757 )
+properties = SubResource( 151 )
+
+[sub_resource type="Resource" id=153]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=154]
+script = ExtResource( 4 )
+position = Vector2( -22066.2, 3663.07 )
+point_in = Vector2( -682.457, 0 )
+point_out = Vector2( 682.457, 0 )
+properties = SubResource( 153 )
+
+[sub_resource type="Resource" id=155]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=156]
+script = ExtResource( 4 )
+position = Vector2( -20449.9, 4632.88 )
+point_in = Vector2( -862.051, 71.8369 )
+point_out = Vector2( 862.051, -71.8369 )
+properties = SubResource( 155 )
+
+[sub_resource type="Resource" id=157]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=158]
+script = ExtResource( 4 )
+position = Vector2( -18618.8, 5634.2 )
+point_in = Vector2( -769.332, 0 )
+point_out = Vector2( 769.332, 0 )
+properties = SubResource( 157 )
+
+[sub_resource type="Resource" id=159]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=160]
+script = ExtResource( 4 )
+position = Vector2( -16944.4, 4231.3 )
+point_in = Vector2( -859.844, 181.02 )
+point_out = Vector2( 859.844, -181.02 )
+properties = SubResource( 159 )
+
+[sub_resource type="Resource" id=161]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=162]
+script = ExtResource( 4 )
+position = Vector2( -15043.7, 3235.7 )
+point_in = Vector2( -588.313, 0 )
+point_out = Vector2( 588.313, 0 )
+properties = SubResource( 161 )
+
+[sub_resource type="Resource" id=163]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=164]
+script = ExtResource( 4 )
+position = Vector2( -13052.5, 4186.05 )
+point_in = Vector2( -859.843, 45.2549 )
+point_out = Vector2( 859.843, -45.2549 )
+properties = SubResource( 163 )
+
+[sub_resource type="Resource" id=165]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=166]
+script = ExtResource( 4 )
+position = Vector2( -11242.3, 5407.93 )
+point_in = Vector2( -814.588, 0 )
+point_out = Vector2( 814.588, 0 )
+properties = SubResource( 165 )
+
+[sub_resource type="Resource" id=167]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=168]
+script = ExtResource( 4 )
+position = Vector2( -8753.28, 4095.54 )
+point_in = Vector2( -1086.12, 90.5098 )
+point_out = Vector2( 1086.12, -90.5098 )
+properties = SubResource( 167 )
+
+[sub_resource type="Resource" id=169]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=170]
+script = ExtResource( 4 )
+position = Vector2( -6490.54, 2783.15 )
+point_in = Vector2( -1040.86, 135.765 )
+point_out = Vector2( 1040.86, -135.765 )
+properties = SubResource( 169 )
+
+[sub_resource type="Resource" id=171]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=172]
+script = ExtResource( 4 )
+position = Vector2( -4408.82, 4095.54 )
+point_in = Vector2( -814.588, 0 )
+point_out = Vector2( 814.588, 0 )
+properties = SubResource( 171 )
+
+[sub_resource type="Resource" id=173]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=174]
+script = ExtResource( 4 )
+position = Vector2( -2508.11, 5181.65 )
+point_in = Vector2( -905.098, 0 )
+point_out = Vector2( 905.098, 0 )
+properties = SubResource( 173 )
+
+[sub_resource type="Resource" id=175]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=176]
+script = ExtResource( 4 )
+position = Vector2( -788.43, 3642.99 )
+point_in = Vector2( -724.078, 45.2549 )
+point_out = Vector2( 724.078, -45.2549 )
+properties = SubResource( 175 )
+
+[sub_resource type="Resource" id=177]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=178]
+script = ExtResource( 4 )
+position = Vector2( 1112.27, 2375.85 )
+point_in = Vector2( -859.842, 90.5098 )
+point_out = Vector2( 859.842, -90.5098 )
+properties = SubResource( 177 )
+
+[sub_resource type="Resource" id=179]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=180]
+script = ExtResource( 4 )
+position = Vector2( 3194, 972.954 )
+point_in = Vector2( -1040.86, 0 )
+point_out = Vector2( 1040.86, 0 )
+properties = SubResource( 179 )
+
+[sub_resource type="Resource" id=181]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=182]
+script = ExtResource( 4 )
+position = Vector2( 5366.23, 2556.87 )
+point_in = Vector2( -769.332, 0 )
+point_out = Vector2( 769.332, 0 )
+properties = SubResource( 181 )
+
+[sub_resource type="Resource" id=183]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=184]
+script = ExtResource( 4 )
+position = Vector2( 7674.22, 3733.5 )
+point_in = Vector2( -905.098, 0 )
+point_out = Vector2( 905.098, 0 )
+properties = SubResource( 183 )
+
+[sub_resource type="Resource" id=185]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=186]
+script = ExtResource( 4 )
+position = Vector2( 9801.11, 4748.39 )
+point_in = Vector2( -954.818, 0 )
+point_out = Vector2( 954.818, 0 )
+properties = SubResource( 185 )
+
+[sub_resource type="Resource" id=187]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=188]
+script = ExtResource( 4 )
+position = Vector2( 11480.3, 3661.87 )
+point_in = Vector2( -592.646, 0 )
+point_out = Vector2( 592.646, 0 )
+properties = SubResource( 187 )
+
+[sub_resource type="Resource" id=189]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=190]
+script = ExtResource( 4 )
+position = Vector2( 12896, 2542.43 )
+point_in = Vector2( -658.496, 0 )
+point_out = Vector2( 658.496, 0 )
+properties = SubResource( 189 )
+
+[sub_resource type="Resource" id=191]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=192]
+script = ExtResource( 4 )
+position = Vector2( 14410.6, 1686.38 )
+point_in = Vector2( -691.42, 65.8496 )
+point_out = Vector2( 691.42, -65.8496 )
+properties = SubResource( 191 )
+
+[sub_resource type="Resource" id=193]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=194]
+script = ExtResource( 4 )
+position = Vector2( 15859.3, 2674.13 )
+point_in = Vector2( -724.346, 0 )
+point_out = Vector2( 724.346, 0 )
+properties = SubResource( 193 )
+
+[sub_resource type="Resource" id=195]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=196]
+script = ExtResource( 4 )
+position = Vector2( 17439.7, 3563.1 )
+point_in = Vector2( -691.42, 0 )
+point_out = Vector2( 691.42, 0 )
+properties = SubResource( 195 )
+
+[sub_resource type="Resource" id=197]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=198]
+script = ExtResource( 4 )
+position = Vector2( 18855.4, 2542.43 )
+point_in = Vector2( -460.947, 131.698 )
+point_out = Vector2( 460.947, -131.698 )
+properties = SubResource( 197 )
+
+[sub_resource type="Resource" id=199]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=200]
+script = ExtResource( 4 )
+position = Vector2( 20435.8, 1258.36 )
+point_in = Vector2( -757.27, 164.624 )
+point_out = Vector2( 757.27, -164.624 )
+properties = SubResource( 199 )
+
+[sub_resource type="Resource" id=201]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=202]
+script = ExtResource( 4 )
+position = Vector2( 22213.8, 2344.88 )
+point_in = Vector2( -559.723, 0 )
+point_out = Vector2( 559.723, 0 )
+properties = SubResource( 201 )
+
+[sub_resource type="Resource" id=203]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=204]
+script = ExtResource( 4 )
+position = Vector2( 23629.5, 3233.85 )
+point_in = Vector2( -493.871, 0 )
+point_out = Vector2( 493.871, 0 )
+properties = SubResource( 203 )
+
+[sub_resource type="Resource" id=205]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=206]
+script = ExtResource( 4 )
+position = Vector2( 26244.8, 4288.12 )
+point_in = Vector2( -845.473, 76.8613 )
+point_out = Vector2( 845.473, -76.8613 )
+properties = SubResource( 205 )
+
+[sub_resource type="Resource" id=207]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=208]
+script = ExtResource( 4 )
+position = Vector2( 28243.2, 2943.05 )
+point_in = Vector2( -576.459, 0 )
+point_out = Vector2( 576.459, 0 )
+properties = SubResource( 207 )
+
+[sub_resource type="Resource" id=209]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=210]
+script = ExtResource( 4 )
+position = Vector2( 30126.3, 1597.98 )
+point_in = Vector2( -768.613, 38.4307 )
+point_out = Vector2( 768.613, -38.4307 )
+properties = SubResource( 209 )
+
+[sub_resource type="Resource" id=211]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=212]
+script = ExtResource( 4 )
+position = Vector2( 31740.4, 2827.76 )
+point_in = Vector2( -691.752, 0 )
+point_out = Vector2( 691.752, 0 )
+properties = SubResource( 211 )
+
+[sub_resource type="Resource" id=213]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=214]
+script = ExtResource( 4 )
+position = Vector2( 33354.5, 4019.11 )
+point_in = Vector2( -691.75, 0 )
+point_out = Vector2( 691.75, 0 )
+properties = SubResource( 213 )
+
+[sub_resource type="Resource" id=215]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=216]
+script = ExtResource( 4 )
+position = Vector2( 35314.4, 2981.48 )
+point_in = Vector2( -614.891, 115.292 )
+point_out = Vector2( 614.891, -115.292 )
+properties = SubResource( 215 )
+
+[sub_resource type="Resource" id=217]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=218]
+script = ExtResource( 4 )
+position = Vector2( 37508.5, 4258.64 )
+point_in = Vector2( -1131.37, 45.2549 )
+point_out = Vector2( 1131.37, -45.2549 )
+properties = SubResource( 217 )
+
+[sub_resource type="Resource" id=219]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=220]
+script = ExtResource( 4 )
+position = Vector2( 39590.2, 3217.78 )
+point_in = Vector2( -814.586, 45.2549 )
+point_out = Vector2( 814.586, -45.2549 )
+properties = SubResource( 219 )
+
+[sub_resource type="Resource" id=221]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=222]
+script = ExtResource( 4 )
+position = Vector2( 42124.5, 4258.64 )
+point_in = Vector2( -1131.37, 45.2549 )
+point_out = Vector2( 1131.37, -45.2549 )
+properties = SubResource( 221 )
+
+[sub_resource type="Resource" id=223]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=224]
+script = ExtResource( 4 )
+position = Vector2( 44523, 2403.19 )
+point_in = Vector2( -950.352, 45.2549 )
+point_out = Vector2( 950.352, -45.2549 )
+properties = SubResource( 223 )
+
+[sub_resource type="Resource" id=225]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=226]
+script = ExtResource( 4 )
+position = Vector2( 46966.8, 3806.09 )
+point_in = Vector2( -1040.86, 135.764 )
+point_out = Vector2( 1040.86, -135.764 )
+properties = SubResource( 225 )
+
+[sub_resource type="Resource" id=227]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=228]
+script = ExtResource( 4 )
+position = Vector2( 48867.5, 2086.4 )
+point_in = Vector2( -724.078, 362.038 )
+point_out = Vector2( 724.078, -362.038 )
+properties = SubResource( 227 )
+
+[sub_resource type="Resource" id=229]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=230]
+script = ExtResource( 4 )
+position = Vector2( 52307.5, 2093.24 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 229 )
+
+[sub_resource type="Resource" id=231]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=232]
+script = ExtResource( 4 )
+position = Vector2( 52487.7, -2320.82 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 231 )
+
+[sub_resource type="Resource" id=233]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=234]
+script = ExtResource( 4 )
+position = Vector2( 54739.7, -2140.65 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 233 )
+
+[sub_resource type="Resource" id=235]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=236]
+script = ExtResource( 4 )
+position = Vector2( -45512.2, 4395.25 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 235 )
+
+[sub_resource type="Resource" id=237]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=238]
+script = ExtResource( 4 )
+position = Vector2( -45514.9, 3960.32 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 237 )
+
+[sub_resource type="Resource" id=239]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=240]
+script = ExtResource( 4 )
+position = Vector2( -45645.1, 3957.62 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 239 )
+
+[sub_resource type="Resource" id=241]
+script = ExtResource( 7 )
+_points = {
+0: SubResource( 120 ),
+1: SubResource( 122 ),
+2: SubResource( 124 ),
+3: SubResource( 126 ),
+4: SubResource( 128 ),
+5: SubResource( 130 ),
+6: SubResource( 132 ),
+7: SubResource( 134 ),
+8: SubResource( 136 ),
+9: SubResource( 138 ),
+10: SubResource( 140 ),
+11: SubResource( 142 ),
+12: SubResource( 144 ),
+13: SubResource( 146 ),
+14: SubResource( 148 ),
+15: SubResource( 150 ),
+16: SubResource( 152 ),
+17: SubResource( 154 ),
+18: SubResource( 156 ),
+19: SubResource( 158 ),
+20: SubResource( 160 ),
+22: SubResource( 162 ),
+23: SubResource( 164 ),
+24: SubResource( 166 ),
+25: SubResource( 168 ),
+26: SubResource( 170 ),
+28: SubResource( 172 ),
+29: SubResource( 174 ),
+30: SubResource( 176 ),
+31: SubResource( 178 ),
+32: SubResource( 180 ),
+33: SubResource( 182 ),
+34: SubResource( 184 ),
+35: SubResource( 186 ),
+36: SubResource( 188 ),
+37: SubResource( 190 ),
+38: SubResource( 192 ),
+39: SubResource( 194 ),
+40: SubResource( 196 ),
+41: SubResource( 198 ),
+42: SubResource( 200 ),
+43: SubResource( 202 ),
+44: SubResource( 204 ),
+45: SubResource( 206 ),
+46: SubResource( 208 ),
+47: SubResource( 210 ),
+48: SubResource( 212 ),
+49: SubResource( 214 ),
+50: SubResource( 216 ),
+51: SubResource( 218 ),
+52: SubResource( 220 ),
+53: SubResource( 222 ),
+54: SubResource( 224 ),
+55: SubResource( 226 ),
+56: SubResource( 228 ),
+57: SubResource( 230 ),
+58: SubResource( 232 ),
+59: SubResource( 234 ),
+60: SubResource( 236 ),
+61: SubResource( 238 ),
+62: SubResource( 240 )
+}
+_point_order = [ 0, 62, 61, 60, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 1, 2, 4, 3 ]
+_constraints = {
+[ 0, 3 ]: 15
+}
+_next_key = 63
+_material_overrides = {
+}
+
+[sub_resource type="Resource" id=118]
+script = ExtResource( 5 )
+_edge_meta_materials = [  ]
+fill_textures = [ ExtResource( 9 ) ]
+fill_texture_normals = [  ]
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_mesh_offset = 0.0
+render_offset = 0.0
+
+[node name="9th Level" type="Node2D"]
+position = Vector2( -88898, 4095 )
+script = ExtResource( 10 )
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2( 94031, -3883 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Ground"]
+position = Vector2( 40340, -3563 )
+
+[node name="SS2D_Shape_Closed" type="Node2D" parent="Ground/StaticBody2D"]
+script = ExtResource( 8 )
+_points = SubResource( 241 )
+shape_material = SubResource( 118 )
+tessellation_stages = 5
+tessellation_tolerence = 4.0
+flip_edges = false
+render_edges = true
+collision_size = 32.0
+collision_offset = 0.0
+collision_polygon_node_path = NodePath("../CollisionPolygon2D")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground/StaticBody2D"]
+visible = false
+modulate = Color( 1, 1, 1, 0.3 )
+polygon = PoolVector2Array( -45646.3, 4386.62, -45645.2, 3957.51, -45514.8, 3960.22, -45512.1, 4395.15, -41961.5, 4357.99, -41876.9, 4361.97, -41794.3, 4373.57, -41713.4, 4392.28, -41634.1, 4417.58, -41479.6, 4485.88, -41329.4, 4574.36, -40444.8, 5298.3, -40287.6, 5412.68, -40124, 5514.27, -39952.7, 5598.97, -39772.3, 5662.64, -39678.3, 5685.3, -39581.6, 5701.17, -39481.9, 5709.72, -39379.1, 5710.44, -39185.7, 5692.78, -39100, 5676.25, -39020.9, 5655.02, -38948.1, 5629.42, -38881.1, 5599.79, -38819.5, 5566.45, -38762.9, 5529.73, -38710.7, 5489.95, -38662.7, 5447.45, -38577.2, 5355.6, -38502.9, 5256.81, -38436.2, 5153.7, -38312, 4945.07, -38247.6, 4844.8, -38176.9, 4750.74, -38096.5, 4665.52, -38051.7, 4627.05, -38003.1, 4591.77, -37950.3, 4560.02, -37892.9, 4532.13, -37830.5, 4508.41, -37762.7, 4489.21, -37626.9, 4451.12, -37501.7, 4405.02, -37277.8, 4293.9, -36550.5, 3782.05, -36457.7, 3731.33, -36360.2, 3687.76, -36256.9, 3652.62, -36146.4, 3627.15, -36090.5, 3620.14, -36037.1, 3619.07, -35986, 3623.57, -35937, 3633.25, -35889.8, 3647.75, -35844.4, 3666.69, -35800.3, 3689.69, -35757.5, 3716.39, -35674.6, 3779.34, -35593.9, 3852.56, -35259.3, 4188.04, -35163.9, 4267.57, -35060.4, 4339.36, -34947, 4400.42, -34886, 4425.99, -34821.9, 4447.75, -34754.5, 4465.33, -34683.5, 4478.34, -34608.7, 4486.43, -34530, 4489.21, -34378.9, 4498.88, -34310.8, 4510.49, -34247.3, 4526.18, -34188, 4545.63, -34132.7, 4568.53, -34081.1, 4594.54, -34032.8, 4623.34, -33945, 4688.05, -33867.1, 4760.07, -33604.7, 5069.73, -33539.4, 5139.65, -33469.3, 5201.41, -33431.8, 5228.43, -33392.1, 5252.44, -33350.1, 5273.12, -33305.3, 5290.15, -33257.6, 5303.21, -33206.5, 5311.98, -33151.9, 5316.13, -33093.3, 5315.34, -33034.5, 5314.24, -32979.3, 5317.48, -32927.3, 5324.77, -32878.3, 5335.82, -32832, 5350.35, -32788.1, 5368.06, -32706.6, 5411.87, -32631.6, 5464.94, -32561, 5524.96, -32424.3, 5656.56, -32279.1, 5788.17, -32198, 5848.19, -32108.3, 5901.26, -32007.9, 5945.07, -31894.6, 5977.3, -31766.2, 5995.65, -31620.6, 5997.79, -31546.7, 5992.15, -31479.4, 5982.11, -31418.3, 5967.92, -31363, 5949.8, -31312.9, 5928.01, -31267.7, 5902.77, -31226.7, 5874.32, -31189.6, 5842.89, -31155.8, 5808.73, -31125, 5772.07, -31070, 5692.2, -30974.1, 5512.89, -30871.4, 5320.11, -30808, 5223.4, -30731.6, 5129.01, -30638.4, 5038.83, -30524.5, 4954.75, -30386.3, 4878.67, -30219.8, 4812.48, -30050.9, 4747.46, -29905.8, 4674.56, -29781.3, 4595.12, -29674.3, 4510.54, -29581.6, 4422.16, -29500, 4331.36, -29222.2, 3971.33, -29149, 3888.95, -29068.1, 3812.36, -28976.2, 3742.93, -28870.3, 3682.02, -28747, 3631, -28603.4, 3591.24, -28528, 3578.84, -28456.6, 3574.96, -28389, 3579.08, -28324.8, 3590.68, -28264, 3609.22, -28206.2, 3634.17, -28151.2, 3665.02, -28098.9, 3701.24, -28048.9, 3742.3, -28001, 3787.67, -27910.8, 3889.25, -27745.9, 4121.04, -27426.5, 4581.24, -27338.1, 4671.04, -27291.4, 4709.26, -27242.7, 4742.31, -27191.7, 4769.69, -27138.2, 4790.86, -27082.1, 4805.3, -27023, 4812.47, -26963.1, 4812.84, -26904.5, 4807.47, -26847.2, 4796.71, -26790.9, 4780.9, -26735.6, 4760.41, -26681.1, 4735.6, -26574, 4674.41, -26363.8, 4515.72, -25930, 4132.68, -25689.5, 3953.79, -25559.7, 3877.44, -25422.1, 3813.62, -25275.6, 3765.16, -25119.3, 3734.91, -25041.9, 3722.33, -24971, 3705.02, -24906.2, 3683.29, -24847, 3657.46, -24793, 3627.84, -24743.8, 3594.74, -24698.9, 3558.49, -24658, 3519.4, -24586.1, 3433.95, -24524.5, 3340.93, -24313.3, 2943.57, -24251.8, 2850.55, -24179.8, 2765.1, -24138.9, 2726.01, -24094, 2689.76, -24044.8, 2656.66, -23990.8, 2627.04, -23931.7, 2601.21, -23866.8, 2579.48, -23795.9, 2562.17, -23718.5, 2549.59, -23639.9, 2543.3, -23565.4, 2544.34, -23494.8, 2552.22, -23428, 2566.5, -23364.6, 2586.69, -23304.4, 2612.33, -23247.1, 2642.96, -23192.6, 2678.11, -23090.7, 2760.09, -22996.8, 2854.55, -22825, 3065.92, -22661.6, 3282.34, -22578.2, 3383.11, -22491.1, 3473.93, -22398.2, 3551.08, -22349.1, 3583.35, -22297.8, 3610.81, -22244.1, 3632.97, -22187.8, 3649.38, -22128.5, 3659.57, -22066.2, 3663.07, -22004, 3666.06, -21945.1, 3674.75, -21889.2, 3688.76, -21836.2, 3707.69, -21785.7, 3731.14, -21737.5, 3758.72, -21647, 3824.7, -21562.5, 3902.47, -21482.2, 3988.87, -21325.4, 4174.91, -21160.2, 4357.59, -21069.3, 4439.78, -20970.2, 4511.65, -20916.8, 4542.74, -20860.7, 4570.06, -20801.5, 4593.22, -20738.9, 4611.83, -20672.7, 4625.5, -20602.6, 4633.83, -20528.4, 4636.42, -20449.9, 4632.88, -20371, 4629.43, -20295.7, 4632.29, -20223.9, 4641.04, -20155.3, 4655.28, -20089.6, 4674.61, -20026.7, 4698.61, -19908.3, 4759.03, -19798.2, 4833.29, -19694.6, 4918.13, -19499.6, 5106.6, -19309, 5298.44, -19210.8, 5387.49, -19108.2, 5467.64, -18999.6, 5535.64, -18942.4, 5564.06, -18883, 5588.23, -18821.2, 5607.73, -18756.7, 5622.17, -18689.3, 5631.12, -18618.8, 5634.2, -18548.8, 5630.69, -18482.7, 5620.43, -18420.3, 5603.85, -18361.2, 5581.34, -18305.3, 5553.34, -18252.3, 5520.25, -18201.8, 5482.48, -18153.5, 5440.45, -18062.7, 5345.28, -17977.6, 5238.04, -17649.2, 4754.74, -17558.8, 4636.89, -17460.6, 4526.87, -17352.3, 4427.99, -17293.7, 4383.76, -17231.7, 4343.55, -17166, 4307.79, -17096.5, 4276.89, -17022.7, 4251.25, -16944.4, 4231.3, -16787.8, 4190.29, -16640, 4136.55, -16500.1, 4072.2, -16367.4, 3999.37, -15468, 3365.81, -15363.9, 3312.07, -15259, 3271.05, -15206, 3255.98, -15152.6, 3244.89, -15098.5, 3238.04, -15043.7, 3235.7, -14988.7, 3238.55, -14933.8, 3246.87, -14879.1, 3260.27, -14824.5, 3278.39, -14715.2, 3327.28, -14605.3, 3390.56, -14149.9, 3727.85, -13905.3, 3905.24, -13776.8, 3985.69, -13643.6, 4056.65, -13505.1, 4115.15, -13360.8, 4158.21, -13210.1, 4182.83, -13132.2, 4187.3, -13052.5, 4186.05, -12974, 4185.57, -12899.4, 4192.31, -12828.6, 4205.8, -12761.3, 4225.56, -12697.1, 4251.12, -12636, 4282.01, -12577.5, 4317.75, -12521.5, 4357.88, -12415.7, 4449.39, -12316.7, 4552.77, -11946.3, 5009.39, -11849.9, 5115.42, -11747.9, 5210.65, -11638.2, 5291.29, -11579.8, 5324.96, -11518.7, 5353.57, -11454.7, 5376.64, -11387.4, 5393.71, -11316.7, 5404.3, -11242.3, 5407.93, -11166.6, 5404.42, -11092, 5394.18, -11018.6, 5377.65, -10946, 5355.25, -10803.2, 5294.57, -10662.5, 5215.6, -9803.34, 4550.56, -9485.84, 4338.78, -9316.49, 4250.26, -9138.66, 4177.92, -8951.27, 4125.19, -8753.28, 4095.54, -8560.32, 4067.38, -8386.91, 4018.73, -8230.34, 3952.45, -8087.89, 3871.39, -7956.84, 3778.39, -7834.48, 3676.31, -7377.52, 3234.2, -7130.47, 3032.76, -6992.8, 2946.92, -6842.06, 2874.81, -6675.55, 2819.27, -6490.54, 2783.15, -6395.3, 2774.97, -6304.58, 2775.51, -6218.12, 2784.23, -6135.66, 2800.56, -6056.95, 2823.95, -5981.72, 2853.85, -5909.73, 2889.69, -5840.71, 2930.93, -5710.57, 3027.38, -5589.25, 3138.74, -5364.83, 3388.43, -5151.02, 3644.49, -4931.37, 3871.39, -4814.22, 3962.79, -4752.92, 4001.04, -4689.45, 4033.58, -4623.57, 4059.85, -4555, 4079.31, -4483.51, 4091.39, -4408.82, 4095.54, -4334.27, 4098.66, -4263.18, 4107.74, -4195.3, 4122.39, -4130.39, 4142.21, -4068.21, 4166.8, -4008.48, 4195.77, -3895.46, 4265.24, -3789.33, 4347.44, -3688.1, 4439.19, -3292.47, 4838, -3185.94, 4929.74, -3072.38, 5011.94, -2949.81, 5081.42, -2884.52, 5110.39, -2816.23, 5134.98, -2744.7, 5154.8, -2669.66, 5169.45, -2590.88, 5178.53, -2508.11, 5181.65, -2425.6, 5177.36, -2347.6, 5164.87, -2273.84, 5144.7, -2204.05, 5117.39, -2137.98, 5083.49, -2075.36, 5043.53, -2015.92, 4998.06, -1959.39, 4947.6, -1854.04, 4833.9, -1757.16, 4706.74, -1580.39, 4429.29, -1412.1, 4149.72, -1325.83, 4019.91, -1235.32, 3902.5, -1138.45, 3801.79, -1086.96, 3759.05, -1033.09, 3722.1, -976.566, 3691.48, -917.125, 3667.73, -854.5, 3651.38, -788.43, 3642.99, -721.711, 3635.63, -657.207, 3622.3, -594.738, 3603.38, -534.137, 3579.26, -475.227, 3550.34, -417.828, 3517, -306.891, 3438.63, -95.5547, 3246.04, 323.934, 2804.62, 554.363, 2605.66, 679.621, 2522.52, 813.43, 2454.43, 883.977, 2427, 957.18, 2404.5, 1033.22, 2387.32, 1112.27, 2375.85, 1190.94, 2363.86, 1265.91, 2345.18, 1337.47, 2320.26, 1405.89, 2289.58, 1471.47, 2253.6, 1534.48, 2212.77, 1653.91, 2118.46, 1874.36, 1892.19, 2085.25, 1640.46, 2304.63, 1392.97, 2423.14, 1280.1, 2550.53, 1179.43, 2689.06, 1094.66, 2763.2, 1059.41, 2840.98, 1029.52, 2922.66, 1005.47, 3008.54, 987.714, 3098.89, 976.721, 3194, 972.954, 3289.63, 977.497, 3381.47, 990.742, 3469.74, 1012.11, 3554.63, 1041.01, 3636.33, 1076.88, 3715.05, 1119.13, 3864.34, 1220.44, 4004.08, 1340.32, 4135.87, 1474.11, 4381.94, 1764.91, 4848.63, 2309.38, 4969.28, 2410.7, 5031.29, 2452.94, 5094.7, 2488.81, 5159.7, 2517.72, 5226.49, 2539.08, 5295.27, 2552.33, 5366.23, 2556.87, 5437.97, 2560.25, 5508.99, 2570.08, 5579.36, 2585.95, 5649.16, 2607.43, 5787.34, 2665.45, 5924.14, 2740.72, 6749.06, 3361.21, 7039.95, 3549.65, 7191.05, 3624.91, 7346.74, 3682.94, 7507.6, 3720.28, 7590.15, 3730.12, 7674.22, 3733.5, 7757.25, 3736.41, 7836.77, 3744.9, 7913.05, 3758.59, 7986.31, 3777.11, 8124.78, 3827.16, 8254.12, 3892.08, 8376.27, 3968.89, 8493.17, 4054.62, 8947.2, 4427.27, 9067.02, 4513, 9193.25, 4589.81, 9327.83, 4654.73, 9472.71, 4704.78, 9629.82, 4736.99, 9801.11, 4748.39, 9888.25, 4745.27, 9970.8, 4736.19, 10049, 4721.53, 10123.1, 4701.7, 10193.3, 4677.1, 10259.9, 4648.12, 10383, 4578.62, 10494.3, 4496.39, 10595.8, 4404.61, 10776.5, 4205.13, 11102.2, 3831.64, 11187.1, 3762.14, 11231.4, 3733.16, 11277.2, 3708.56, 11324.7, 3688.73, 11374.3, 3674.07, 11426.1, 3664.99, 11480.3, 3661.87, 11534.6, 3658.66, 11586.6, 3649.3, 11636.5, 3634.2, 11684.3, 3613.77, 11730.3, 3588.42, 11774.6, 3558.56, 11858.9, 3486.96, 11938.6, 3402.23, 12015, 3307.67, 12314.9, 2896.63, 12395.2, 2802.07, 12480.3, 2717.34, 12571.6, 2645.74, 12620, 2615.88, 12670.4, 2590.53, 12723.1, 2570.1, 12778.1, 2555, 12835.7, 2545.64, 12896, 2542.43, 12956.3, 2540.16, 13013.9, 2533.54, 13069, 2522.84, 13121.8, 2508.35, 13172.4, 2490.33, 13221.1, 2469.07, 13313.2, 2417.93, 13399.8, 2357.15, 13482.3, 2288.93, 13801.2, 1986.18, 13974.9, 1847.92, 14070.5, 1789.83, 14174, 1742.07, 14286.9, 1706.84, 14347.3, 1694.63, 14410.6, 1686.38, 14473.5, 1683.42, 14532.9, 1686.62, 14588.8, 1695.59, 14641.7, 1709.92, 14691.6, 1729.21, 14739, 1753.08, 14783.9, 1781.12, 14826.8, 1812.94, 14907.1, 1886.29, 14981.8, 1969.97, 15264.9, 2344.24, 15341.6, 2431.77, 15424.6, 2510.53, 15469.1, 2545.63, 15515.9, 2577.33, 15565.3, 2605.25, 15617.4, 2628.99, 15672.7, 2648.14, 15731.3, 2662.31, 15793.4, 2671.11, 15859.3, 2674.13, 15925.6, 2676.68, 15988.8, 2684.11, 16049.2, 2696.1, 16106.8, 2712.33, 16162, 2732.46, 16214.9, 2756.17, 16314.6, 2813.03, 16407.6, 2880.31, 16495.4, 2955.41, 16826.8, 3281.83, 16912.7, 3356.92, 17002.9, 3424.2, 17099.2, 3481.06, 17150, 3504.77, 17203, 3524.9, 17258.2, 3541.13, 17316, 3553.12, 17376.4, 3560.55, 17439.7, 3563.1, 17503.3, 3560.55, 17564.5, 3553.08, 17623.4, 3541.02, 17680.1, 3524.64, 17734.8, 3504.27, 17787.6, 3480.19, 17887.8, 3422.14, 17981.6, 3352.9, 18069.9, 3274.88, 18234, 3102.15, 18537, 2757.47, 18612.8, 2685.53, 18690.6, 2624.1, 18730.5, 2598.08, 18771.1, 2575.6, 18812.8, 2556.94, 18855.4, 2542.43, 18898.3, 2527.63, 18940.8, 2508.11, 18982.8, 2484.2, 19024.6, 2456.19, 19107.5, 2389.13, 19190.3, 2309.38, 19534.5, 1912.74, 19724.5, 1702.27, 19934.2, 1509.93, 20048.3, 1426.71, 20169.4, 1355.4, 20298.3, 1298.46, 20435.8, 1258.36, 20505.9, 1246.99, 20574.4, 1243.43, 20641.3, 1247.19, 20706.7, 1257.78, 20770.6, 1274.71, 20833.1, 1297.5, 20894.4, 1325.65, 20954.4, 1358.68, 21071, 1437.41, 21183.6, 1529.8, 21398.9, 1739.89, 21806.3, 2151.96, 21906.8, 2230.5, 21957.2, 2263.42, 22007.8, 2291.44, 22058.7, 2314.09, 22109.9, 2330.87, 22161.6, 2341.29, 22213.8, 2344.88, 22265.7, 2347.43, 22316.5, 2354.86, 22366.3, 2366.85, 22415.1, 2383.08, 22510, 2426.92, 22601.7, 2483.78, 22777.5, 2626.16, 23112.1, 2952.57, 23278.7, 3094.95, 23363.4, 3151.81, 23406.4, 3175.52, 23449.8, 3195.65, 23493.8, 3211.88, 23538.4, 3223.87, 23583.6, 3231.3, 23629.5, 3233.85, 23678.1, 3237.09, 23731, 3246.53, 23849, 3282.3, 24127.6, 3409.39, 24805.3, 3789.81, 25548.9, 4155.82, 25731.8, 4219.37, 25909.9, 4264.89, 26081.5, 4288.95, 26164.3, 4291.86, 26244.8, 4288.12, 26323.3, 4277.5, 26400.2, 4260.35, 26475.7, 4237.12, 26549.8, 4208.26, 26693.8, 4135.45, 26832.7, 4045.53, 27096.7, 3828.75, 27806.6, 3142.41, 27917.2, 3060.59, 28026.5, 2997.69, 28080.8, 2974.46, 28135, 2957.31, 28189.1, 2946.69, 28243.2, 2943.05, 28297.1, 2939.3, 28350.9, 2928.37, 28404.5, 2910.72, 28458.1, 2886.83, 28511.6, 2857.17, 28565.2, 2822.21, 28672.5, 2738.29, 29344.7, 2040.46, 29588.9, 1824.36, 29716.5, 1736.38, 29848.4, 1666.81, 29916, 1640.11, 29984.8, 1619.42, 30054.9, 1605.22, 30126.3, 1597.98, 30196.6, 1598.13, 30263.5, 1605.46, 30327.2, 1619.5, 30388, 1639.79, 30446, 1665.84, 30501.4, 1697.2, 30554.5, 1733.38, 30605.5, 1773.92, 30701.9, 1866.18, 30792.4, 1970.2, 31128.4, 2428.52, 31214.3, 2534.79, 31304.5, 2630.2, 31400.4, 2710.97, 31451.1, 2744.7, 31504, 2773.34, 31559.1, 2796.44, 31616.7, 2813.53, 31677.1, 2824.12, 31740.4, 2827.76, 31803.9, 2831.18, 31864.9, 2841.14, 31923.6, 2857.21, 31980, 2878.95, 32034.4, 2905.93, 32087, 2937.7, 32187.2, 3013.91, 32282, 3104.07, 32372.7, 3204.71, 32722.2, 3642.16, 32812.9, 3742.8, 32907.8, 3832.96, 33008, 3909.17, 33060.5, 3940.94, 33114.9, 3967.92, 33171.3, 3989.66, 33230, 4005.73, 33291, 4015.69, 33354.5, 4019.11, 33419.2, 4016.46, 33483.8, 4008.72, 33612.1, 3979.25, 33739.5, 3933.23, 33866.1, 3873.19, 34116.5, 3721.2, 34363.3, 3543.53, 34846, 3192.25, 35082, 3059.17, 35198.7, 3012.13, 35256.6, 2994.6, 35314.4, 2981.48, 35343.1, 2977.2, 35371.6, 2975.13, 35399.9, 2975.19, 35427.9, 2977.32, 35483.6, 2987.5, 35538.8, 3005.11, 35593.6, 3029.6, 35648.3, 3060.41, 35757.5, 3138.76, 36217.8, 3593.8, 36479.2, 3844.03, 36622.1, 3959.25, 36774.8, 4061.96, 36938.6, 4147.7, 37025, 4182.82, 37114.6, 4212.03, 37207.6, 4234.77, 37304.2, 4250.49, 37404.4, 4258.63, 37508.5, 4258.64, 37709.4, 4239.99, 37889.4, 4202.78, 38050.9, 4149.66, 38196.5, 4083.28, 38328.6, 4006.29, 38449.6, 3921.35, 38668.1, 3738.21, 38871.9, 3555.07, 39080.4, 3393.14, 39192.5, 3326.76, 39313.3, 3273.64, 39377.6, 3252.88, 39445, 3236.43, 39515.8, 3224.62, 39590.2, 3217.78, 39665.9, 3216.91, 39740.5, 3222.51, 39814, 3234.14, 39886.6, 3251.37, 40029.6, 3300.91, 40170.7, 3367.69, 41040.2, 3937.26, 41365.8, 4108.73, 41540.3, 4175.51, 41724.2, 4225.05, 41918.5, 4253.91, 42124.5, 4258.64, 42228.2, 4249.46, 42327.4, 4230.84, 42422.4, 4203.4, 42513.4, 4167.78, 42600.7, 4124.59, 42684.5, 4074.48, 42842.9, 3956, 42990.7, 3817.36, 43130, 3663.61, 43644.8, 2998.22, 43906.4, 2705.83, 44045.7, 2587.35, 44118.4, 2537.24, 44193.5, 2494.05, 44271.2, 2458.43, 44351.9, 2430.99, 44435.7, 2412.36, 44523, 2403.19, 44610.7, 2403.62, 44695.6, 2412.98, 44778.1, 2430.66, 44858.2, 2456.05, 44936.2, 2488.52, 45012.2, 2527.49, 45159.4, 2622.39, 45439.4, 2862.99, 45986.7, 3409.93, 46130.2, 3531.76, 46279.5, 3637.8, 46436.2, 3723.16, 46517.8, 3756.55, 46601.9, 3782.93, 46688.7, 3801.69, 46778.3, 3812.21, 46870.9, 3813.88, 46966.8, 3806.09, 47061.8, 3790.24, 47151.7, 3768.38, 47236.9, 3740.87, 47317.6, 3708.07, 47466.7, 3628, 47601.1, 3531.02, 47723, 3420, 47834.7, 3297.77, 48036, 3031.1, 48411.4, 2488.75, 48512.4, 2367.9, 48620.6, 2258.67, 48738.3, 2163.88, 48801.3, 2122.8, 48867.5, 2086.4, 48941.1, 2054.57, 49025.5, 2026.81, 49223.2, 1982.75, 49710.5, 1934.73, 50859, 1954.06, 52307.4, 2093.12, 52487.6, -2320.93, 54739.8, -2140.75, 54193.7, 4386.62, 54065.8, 27042.7, -45902.4, 27042.7 )
+
+[node name="body" parent="Ground" instance=ExtResource( 11 )]
+position = Vector2( 92382, -1625 )
+
+[node name="GameUI" parent="." instance=ExtResource( 2 )]
+
+[node name="BG" parent="." instance=ExtResource( 1 )]
+
+[node name="PauseMenu" parent="." instance=ExtResource( 3 )]
+
+[node name="Next_Level" parent="." instance=ExtResource( 12 )]

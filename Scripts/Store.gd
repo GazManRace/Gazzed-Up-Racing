@@ -9,68 +9,53 @@ export(float) var rotation_speed: float = 0.1
 var direction = Vector2(-1, 0)
 onready var parallax = $ParallaxBackground
 
-
-
 func _process(delta):
 	control.position.x = -scroll_bar.value
 	parallax.scroll_offset += direction * speed * delta
-	
-	
-
-
-
-var characters = [
-	preload("res://Levels/Mango Tango.tscn"), #0
-	preload("res://Levels/Beach car/beach car.tscn"), #1
-	preload("res://Levels/Dirt Master/bike.tscn"), #2
-	preload("res://Levels/The Hot Rod.tscn"), #3
-	preload("res://Levels/Jungle jammer Final.tscn"), #4
-	preload("res://Assets/African Car.tscn"), #5
-	preload("res://Levels/Monster Truck/monster truck.tscn")] #6
-
 
 
 func _on_Back_pressed():
-	SceneTransition.change_scene("res://Scenes/Main.tscn")
+	SceneTransition.change_scene("res://Scenes/main.tscn")
 
 
 func _on_Next_pressed():
-	SceneTransition.change_scene("res://Scenes/Leveltest.tscn")
+	SceneTransition.change_scene("res://Scenes/Level.tscn")
+#	self.queue_free()
 
 func _on_MangoTango_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[0]
+		Characterselectionmanager.player = load("res://car_scenes/mango_tango.tscn")
 	
 	
 func _on_JungleJammer_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[4]
+		Characterselectionmanager.player = load("res://car_scenes/jungle_jammer_final.tscn")
 	
 	
 func _on_BeachBugger_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[1]
+		Characterselectionmanager.player = load("res://car_scenes/beach_car.tscn")
 	
-	
+#
 func _on_KaDukaSpeed_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[5]
-	
-	
+		Characterselectionmanager.player = load("res://car_scenes/african_car.tscn")
+
+
 func _on_MonsterTruck_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[6]
-	
-	
+		Characterselectionmanager.player = load("res://car_scenes/monster_truck.tscn")
+
+
 func _on_TheHotRod_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[3]
-	
+		Characterselectionmanager.player = load("res://car_scenes/the_hot_rod.tscn")
+
 
 func _on_DirtMaster3000_pressed():
 	if (Characterselectionmanager.player == null):
-		Characterselectionmanager.player = characters[2]
-	
+		Characterselectionmanager.player = load("res://car_scenes/bike.tscn")
+
 
 
 

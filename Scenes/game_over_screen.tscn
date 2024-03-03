@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/UI/Bangers.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/fonts/kenney_kenney-fonts/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.376471, 0.133333, 0.133333, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 678.0
+margin_right = 1202.0
+margin_bottom = 173.0
+custom_fonts/font = SubResource( 1 )
+text = "FUEL done"
+
+[node name="MainMenu" type="Button" parent="."]
+margin_left = 188.0
+margin_top = 643.0
+margin_right = 814.0
+margin_bottom = 948.0
+custom_fonts/font = SubResource( 2 )
+text = "Main Menu"
+
+[node name="RestartLevel" type="Button" parent="."]
+margin_left = 599.0
+margin_top = 235.0
+margin_right = 1464.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 2 )
+text = "Restart Level"
+
+[node name="ReloadFromCheckpoint" type="Button" parent="."]
+margin_left = 1274.0
+margin_top = 643.0
+margin_right = 1900.0
+margin_bottom = 948.0
+custom_fonts/font = SubResource( 2 )
+text = "Respawn!"

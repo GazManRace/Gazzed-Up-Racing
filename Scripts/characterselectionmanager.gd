@@ -2,10 +2,10 @@ extends Node
 
 var player
 #
-#var selectableCharacters = {
-#	"Beach Car" : preload("res://Levels/Beach car/beach car.tscn"),
-#	"Dirt Master 3000" : preload("res://Levels/Dirt Master/bike.tscn"),
-#	"The Hot Rod" : preload("res://Levels/Hot rod/The Hot Rod.tscn"),
-#	"Jungle Jammer" : preload("res://Levels/Jungle Jammer/Jungle jammer.tscn"),
-#	"Monster Truck" : preload("res://Levels/Monster Truck/monster truck.tscn")
-#}
+#var selectableCharacters = [
+#	preload("res://car_scenes/beach_car.tscn"),
+#	preload("res://car_scenes/bike.tscn"),
+#	preload("res://car_scenes/the_hot_rod.tscn"),
+#	preload("res://car_scenes/jungle_jammer_final.tscn"),
+#	preload("res://car_scenes/monster_truck.tscn")
+#]

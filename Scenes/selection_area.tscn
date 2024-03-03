@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scenes/SelectionArea.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/selection_area.gd" type="Script" id=1]
 
 [node name="Button" type="Button"]
 margin_top = 232.0

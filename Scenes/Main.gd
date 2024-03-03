@@ -8,16 +8,17 @@ onready var parallax = $ParallaxBackground
 
 
 func _on_Start_pressed():
-	SceneTransition.change_scene("res://Scenes/Store.tscn")
+	get_tree().change_scene("res://Scenes/level_test.tscn")
 	
 func _on_Settings_pressed():
-	SceneTransition.change_scene("res://Scenes/Settings.tscn")
+	SceneTransition.change_scene("res://Scenes/settings_scene.tscn")
 	
 func _on_Quit_pressed():
 	get_tree().quit()
 	
 func _on_Share_pressed():
-	SceneTransition.change_scene("res://Scenes/Share page.tscn")
+	SceneTransition.change_scene("res://Scenes/share_page.tscn")
+	
 func _on_Shop_pressed():
 	pass
 

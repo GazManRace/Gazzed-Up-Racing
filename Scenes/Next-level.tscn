@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Next_level.gd" type="Script" id=1]
+
+[node name="Next_Level" type="CanvasLayer"]
+layer = 128
+visible = false
+script = ExtResource( 1 )
+
+[node name="Next_level" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.47451, 0.592157, 0.392157, 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 1173.0
+margin_top = 741.0
+margin_right = 1729.0
+margin_bottom = 887.0
+text = "NEXT LEVEL"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
