@@ -1,4 +1,4 @@
-[gd_scene load_steps=138 format=2]
+[gd_scene load_steps=139 format=2]
 
 [ext_resource path="res://Scenes/sky_clouds.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Scenes/Next_Level_Indicator.tscn" type="PackedScene" id=14]
 [ext_resource path="res://car_scenes/mango_tango.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Scenes/Next-level.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Collectables/golden_coin.tscn" type="PackedScene" id=17]
 
 [sub_resource type="Resource" id=157]
 script = ExtResource( 7 )
@@ -924,5 +925,14 @@ position = Vector2( 127493, 11090 )
 [node name="Next_level" parent="." instance=ExtResource( 16 )]
 
 [node name="player" parent="." instance=ExtResource( 15 )]
+
+[node name="Coin" parent="." instance=ExtResource( 17 )]
+position = Vector2( 220, 100 )
+
+[node name="Coin2" parent="." instance=ExtResource( 17 )]
+position = Vector2( 305, 92 )
+
+[node name="Coin3" parent="." instance=ExtResource( 17 )]
+position = Vector2( 399, 84 )
 
 [connection signal="body_entered" from="body" to="." method="_on_body_body_entered"]
