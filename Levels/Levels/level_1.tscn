@@ -935,4 +935,7 @@ position = Vector2( 305, 92 )
 [node name="Coin3" parent="." instance=ExtResource( 17 )]
 position = Vector2( 399, 84 )
 
+[node name="Coin4" parent="." instance=ExtResource( 17 )]
+position = Vector2( 481, 75 )
+
 [connection signal="body_entered" from="body" to="." method="_on_body_body_entered"]
