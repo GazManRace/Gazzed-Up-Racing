@@ -22,3 +22,4 @@ func set_is_paused(value):
 
 func _on_Main_Menu_pressed():
 	BackTransition.change_scene("res://Scenes/main.tscn")
+	

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/coin-collect-retro-8-bit-sound-effect-145251.mp3-a82588421ad683a43cadbbfa17f6e334.mp3str"
+
+[deps]
+
+source_file="res://Assets/Soundfx/coin-collect-retro-8-bit-sound-effect-145251.mp3"
+dest_files=[ "res://.import/coin-collect-retro-8-bit-sound-effect-145251.mp3-a82588421ad683a43cadbbfa17f6e334.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

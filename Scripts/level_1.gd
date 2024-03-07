@@ -11,9 +11,6 @@ func _on_body_body_entered(body):
 		next_screen.show()
 		print("Body Entered")
 
-
-
-
 func _ready():
 	pass
 	#MusicController.audio_stream_player.stop()
@@ -25,42 +22,10 @@ func add_coins(amount):
 	coins_collected += amount
 	$GameUI/Coin/Control/Label.text = str(coins_collected)
 #
-#func update_fuel_UI(value):
-#	$GameUI/Fuel/Control/ProgressBar.value = value
-#	var stylebox = $GameUI/Fuel/Control/ProgressBar.get('custom_styles/fg')
-#	stylebox.bg_color.h = lerp(0, 0.3, value / 100)
-#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+func update_fuel_UI(value):
+	$GameUI/Fuel/Control/ProgressBar.value = value
+	var stylebox = $GameUI/Fuel/Control/ProgressBar.get('custom_styles/fg')
+	stylebox.bg_color.h = lerp(0, 0.3, value / 100)
 
 #func _process(delta):
 	#if Input.is_action_pressed("pause"):
@@ -73,7 +38,3 @@ func add_coins(amount):
 	#else:
 		#pause_menu.show()
 		#Engine.time_scale = 0
-		
-	
-
-		
