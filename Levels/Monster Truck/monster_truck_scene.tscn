@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Scenes/test scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/LevelManager.gd" type="Script" id=2]
-[ext_resource path="res://Scenes/Collectables/silver_coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://coins/coin/silver_coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Collectables/golden_coin.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Collectables/bronze_coin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Collectables/goldencoin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://coins/coin/bronze_coin.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/FIRST STAGE.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/2ND STAGE.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/3rd STAGE.tscn" type="PackedScene" id=9]

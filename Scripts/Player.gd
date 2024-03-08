@@ -6,6 +6,8 @@ var max_speed = 50
 var fuel = 100
 var other_scene
 
+
+
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
 	#GlobalButton.connect("GoForward", self, "forward_pressed")
@@ -29,6 +31,7 @@ func _on_Backward_pressed():
 			wheel.angular_velocity = -50
 
 
+# warning-ignore:unused_argument
 func forward(delta):
 	if fuel > 0:
 		$GameOverTimer.stop()
@@ -36,7 +39,10 @@ func forward(delta):
 			use_fuel()
 			for wheel in wheels:
 				wheel.angular_velocity = 60
+			var car_distance = int(self.position.x/100)
+			print(car_distance)
 
+# warning-ignore:unused_argument
 func _back(delta):
 	if fuel > 0:
 		$GameOverTimer.stop()
@@ -51,10 +57,12 @@ func _physics_process(delta):
 	_back(delta)
 	reset_rotation(delta)
 
+# warning-ignore:unused_argument
 func reset_rotation(delta):
 	if Input.is_action_pressed("ui_down"):  
 		self.set_rotation_degrees(0.0)
 
+# warning-ignore:unused_argument
 func refuel(delta):
 	fuel = 100
 	get_parent().update_fuel_UI(fuel)
@@ -70,6 +78,7 @@ func use_fuel():
 	
 
 func _on_GameOverTimer_timeout():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/game_over_screen.tscn")
 
 

@@ -255,6 +255,7 @@ BackTransition="*res://Scenes/back_transition.tscn"
 Global="*res://Scripts/global.gd"
 MusicController="*res://music_controller.gd"
 NextLevel="*res://Scripts/Next_level.gd"
+Globalscore="*res://Scripts/Globalscore.gd"
 
 [display]
 

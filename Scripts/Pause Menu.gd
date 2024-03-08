@@ -21,5 +21,13 @@ func set_is_paused(value):
 
 
 func _on_Main_Menu_pressed():
+	Characterselectionmanager.player = null
+	Levelselectionmanager.level = null
+	self.is_paused = false
 	BackTransition.change_scene("res://Scenes/main.tscn")
 	
+
+
+func _on_Button_pressed():
+	self.is_paused = false
+	BackTransition.change_scene("res://Scenes/store_scene.tscn")

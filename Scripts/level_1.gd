@@ -3,8 +3,8 @@ extends Node2D
 onready var pause_menu = $PauseMenu
 var paused = false
 
-
 onready var next_screen = get_node("Next_level")
+
 
 func _on_body_body_entered(body):
 	if body.is_in_group("player"):
@@ -17,6 +17,11 @@ func _ready():
 	
 	
 var coins_collected = 0
+
+
+
+
+
 
 func add_coins(amount):
 	coins_collected += amount

@@ -17,11 +17,12 @@ func spawn_characters():
 	add_child(givenPlayer)
 	
 	
-var coins_collected = 0
+func add_distance():
+	$GameUI/Label.text = str($player.position.x)
 
 func add_coins(amount):
-	coins_collected += amount
-	$GameUI/Coin/Control/Label.text = str(coins_collected)
+	Globalscore.coins_collected += amount
+	$GameUI/Coin/Control/Label.text = str(Globalscore.coins_collected)
 #
 
 func update_fuel_UI(value):
