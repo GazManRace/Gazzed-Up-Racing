@@ -25,9 +25,8 @@ func _on_Main_Menu_pressed():
 	Levelselectionmanager.level = null
 	self.is_paused = false
 	BackTransition.change_scene("res://Scenes/main.tscn")
-	
 
-
-func _on_Button_pressed():
+func _on_Backtolevels_pressed():
 	self.is_paused = false
 	BackTransition.change_scene("res://Scenes/store_scene.tscn")
+
