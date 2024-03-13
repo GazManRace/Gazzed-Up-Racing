@@ -19,10 +19,10 @@ func spawn_characters():
 	
 func add_distance():
 	$GameUI/Label.text = str($player.position.x)
-
-func add_coins(amount):
-	Globalscore.coins_collected += amount
-	$GameUI/Coin/Control/Label.text = str(Globalscore.coins_collected)
+#
+#func add_coins(amount):
+#	Globalscore.coins_collected += amount
+#	$GameUI/Coin/Control/Label.text = str(Globalscore.coins_collected)
 #
 
 func update_fuel_UI(value):
