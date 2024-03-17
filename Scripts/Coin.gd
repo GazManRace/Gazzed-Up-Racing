@@ -1,11 +1,12 @@
 extends Area2D
 
-export(int) var value = 5
 
+export(int) var value = 5
 
 func _on_Coin_body_entered(body):
 	if body.is_in_group("player"):
 			Globalscore.coins_collected += value
+			Globalscore.save_game()
 			$AnimationPlayer.play("Pickup")
 			$CollisionShape2D.set_deferred("disabled", true)
 

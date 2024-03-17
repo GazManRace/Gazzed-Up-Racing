@@ -10,10 +10,10 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=8]
 [ext_resource path="res://Assets/UI/Backsoil.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/level_1.gd" type="Script" id=10]
-[ext_resource path="res://Collectables/golden1_coin.tscn" type="PackedScene" id=11]
+[ext_resource path="res://golden1_coin.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/Next-level.tscn" type="PackedScene" id=12]
-[ext_resource path="res://coins/coin/silver_coin.tscn" type="PackedScene" id=13]
-[ext_resource path="res://coins/coin/bronze_coin.tscn" type="PackedScene" id=14]
+[ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=13]
+[ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Resource" id=143]
 script = ExtResource( 6 )

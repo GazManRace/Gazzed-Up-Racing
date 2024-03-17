@@ -4,22 +4,22 @@
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://Assets/car body/beach car.png" type="Texture" id=3]
 
-[node name="Beach Car" type="RigidBody2D" groups=["player"]]
+[node name="player" type="RigidBody2D" groups=["player"]]
 mass = 3.0
 gravity_scale = 2.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.0505286, 0.0505286 )
+scale = Vector2( 0.11023, 0.11023 )
 texture = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -5, 10 )
-scale = Vector2( 0.0571837, 0.0571837 )
+position = Vector2( -10.9077, 21.8153 )
+scale = Vector2( 0.124748, 0.124748 )
 polygon = PoolVector2Array( -566, 67, -588, 65, -598, 46, -566, 10, -598, 2, -622, -14, -628, -150, -637, -160, -592, -164, -571, -209, -524, -209, -515, -201, -539, -77, -511, -77, -279, -222, -200, -241, 36, -256, 101, -250, 142, -222, 220, -132, 333, -126, 442, -107, 574, -52, 629, -9, 633, 31, 622, 46, 571, 21, 512, 1, 448, 1, 395, 18, 357, 55, 327, 108, 310, 171, 310, 214, 329, 220, 339, 233, 331, 252, 67, 254, -88, 255, -211, 255, -230, 246, -228, 229, -203, 220, -211, 148, -230, 91, -254, 53, -288, 25, -343, 6, -415, 10, -479, 25, -539, 52 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="."]
-position = Vector2( 25, 22 )
+position = Vector2( 52, 46 )
 node_a = NodePath("..")
 node_b = NodePath("BCWheel_F")
 softness = 0.5
@@ -29,7 +29,7 @@ mass = 7.0
 gravity_scale = 3.0
 
 [node name="PinJoint2D2" type="PinJoint2D" parent="."]
-position = Vector2( -28, 23 )
+position = Vector2( -59, 46 )
 node_a = NodePath("..")
 node_b = NodePath("BCWheel_R")
 softness = 0.5
@@ -43,8 +43,9 @@ wait_time = 5.0
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 80, 0 )
 current = true
-zoom = Vector2( 0.25, 0.25 )
+zoom = Vector2( 0.5, 0.5 )
 offset_h = 1.0
 drag_margin_left = 0.15
 editor_draw_drag_margin = true

@@ -20,8 +20,8 @@ script = ExtResource( 1 )
 
 [node name="HomeBackground" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.74902 )
-position = Vector2( 2255.46, 1260.26 )
-scale = Vector2( 0.730004, 0.758403 )
+position = Vector2( 2076.56, 1279.54 )
+scale = Vector2( 0.774813, 0.856894 )
 texture = ExtResource( 15 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 6 )]

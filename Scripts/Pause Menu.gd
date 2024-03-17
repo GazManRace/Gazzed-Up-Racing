@@ -23,10 +23,11 @@ func set_is_paused(value):
 func _on_Main_Menu_pressed():
 	Characterselectionmanager.player = null
 	Levelselectionmanager.level = null
+	get_tree().current_scene.queue_free()
 	self.is_paused = false
 	BackTransition.change_scene("res://Scenes/main.tscn")
 
 func _on_Backtolevels_pressed():
 	self.is_paused = false
-	BackTransition.change_scene("res://Scenes/store_scene.tscn")
+	BackTransition.change_scene("res://Scenes/level_test.tscn")
 

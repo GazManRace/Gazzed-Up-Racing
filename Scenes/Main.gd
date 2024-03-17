@@ -6,6 +6,8 @@ export(float) var rotation_speed: float = 0.1
 var direction = Vector2(-1, 0)
 onready var parallax = $ParallaxBackground
 
+func _ready():
+	Globalscore.load_game()
 
 func _on_Start_pressed():
 	get_tree().change_scene("res://Scenes/level_test.tscn")
