@@ -333,7 +333,7 @@ HScrollBar/styles/scroll = null
 HScrollBar/styles/scroll_focus = ExtResource( 18 )
 
 [sub_resource type="DynamicFont" id=138]
-size = 300
+size = 100
 outline_size = 6
 outline_color = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
 font_data = ExtResource( 19 )
@@ -379,7 +379,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -8.0
 margin_bottom = -36.0
-rect_clip_content = false
 
 [node name="control" type="Node2D" parent="TabContainer/Cars/RichTextLabel"]
 
@@ -445,7 +444,7 @@ margin_right = 4272.0
 margin_bottom = 2227.0
 rect_scale = Vector2( 0.05, 0.05 )
 custom_fonts/font = SubResource( 148 )
-text = "5000
+text = "500
 "
 
 [node name="Sprite2" type="Sprite" parent="TabContainer/Cars/RichTextLabel/control/Panel2/Label"]
