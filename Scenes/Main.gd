@@ -8,6 +8,7 @@ onready var parallax = $ParallaxBackground
 
 func _ready():
 	Globalscore.load_game()
+	Globalscore.load_level()
 
 func _on_Start_pressed():
 	get_tree().change_scene("res://Scenes/level_test.tscn")

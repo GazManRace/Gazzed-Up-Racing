@@ -19,9 +19,9 @@ func _ready():
 	for i in $control1/control.get_children():
 		i.text = i.name
 	for i in range($control1/control.get_child_count()):
-		Global.levels.append(i+1)
+		Globalscore.levels.append(i+1)
 	for level in $control1/control.get_children():
-		if str2var(level.name) in range(Global.unlockedlevels+1):
+		if str2var(level.name) in range(Globalscore.unlockedlevels+1):
 			level.disabled = false
 			level.connect('pressed', self, 'change_level', [level.name])
 		else:

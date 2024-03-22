@@ -44,7 +44,6 @@ func _buy(price, item_no, var car_scene = PackedScene):
 #	else:
 #		load_cars(car_scene)
 	Globalscore.save_store()
-	
 
 func _on_Back_pressed():
 	SceneTransition.change_scene("res://Scenes/main.tscn")

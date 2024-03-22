@@ -57,3 +57,5 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 "anims/Up n down" = SubResource( 3 )
+
+[connection signal="body_entered" from="." to="." method="_on_body_body_entered"]

@@ -1,6 +1,33 @@
 extends Node
 
 var coins_collected = 0
+var levels = []
+var unlockedlevels = 1
+
+
+ 
+
+func save_level():
+	var save_file = File.new()
+	save_file.open("user://save_level.save", File.WRITE)
+	var data_set = {
+		'Levels' : levels,
+		'U_levels' : unlockedlevels
+	}
+	save_file.store_var(data_set)
+	save_file.close()
+	
+func load_level():
+	var save_file = File.new()
+	if !save_file.file_exists("user://save_level.save"):
+		return
+	save_file.open("user://save_level.save", File.READ)
+	var data_set = save_file.get_var()
+	levels = data_set['Levels']
+	unlockedlevels = data_set['U_levels']
+	save_file.close()
+
+
 
 func save_game():
 	var save_file = File.new()
