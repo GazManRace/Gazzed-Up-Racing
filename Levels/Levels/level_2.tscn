@@ -13,7 +13,7 @@
 [ext_resource path="res://Scenes/Next_Level_Indicator.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/Next-level.tscn" type="PackedScene" id=12]
 [ext_resource path="res://car_scenes/mango_tango.tscn" type="PackedScene" id=13]
-[ext_resource path="res://golden1_coin.tscn" type="PackedScene" id=14]
+[ext_resource path="res://coins/golden1_coin.tscn" type="PackedScene" id=14]
 [ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=15]
 [ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=16]
 

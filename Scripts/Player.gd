@@ -4,36 +4,11 @@ var wheels = []
 var speed = 60000
 var max_speed = 50
 var fuel = 100
-var other_scene
-
-
 
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
-	#GlobalButton.connect("GoForward", self, "forward_pressed")
-	#get_parent().update_fuel_UI(fuel)
-	#MusicController.audio_stream_player.stop()
+	get_parent().update_fuel_UI(fuel)
 
-#func _on_Forward_pressed():
-#	if fuel > 0:
-#		$GameOverTimer.stop()
-#		apply_torque_impulse(1000 * 60)
-#		use_fuel()
-#		for wheel in wheels:
-#			wheel.angular_velocity = 60
-			
-func _on_Backward_pressed():
-	if fuel > 0:
-		$GameOverTimer.stop()
-		apply_torque_impulse(-100 * 60)
-		use_fuel()
-		for wheel in wheels:
-			wheel.angular_velocity = -50
-
-
-
-
-# warning-ignore:unused_argument
 func forward(delta):
 	if fuel > 0:
 		$GameOverTimer.stop()
@@ -44,7 +19,6 @@ func forward(delta):
 			var car_distance = int(self.position.x/100)
 			print(car_distance)
 
-# warning-ignore:unused_argument
 func _back(delta):
 	if fuel > 0:
 		$GameOverTimer.stop()
@@ -59,12 +33,10 @@ func _physics_process(delta):
 	_back(delta)
 	reset_rotation(delta)
 
-# warning-ignore:unused_argument
 func reset_rotation(delta):
 	if Input.is_action_pressed("ui_down"):  
 		self.set_rotation_degrees(0.0)
 
-# warning-ignore:unused_argument
 func refuel(delta):
 	fuel = 100
 	get_parent().update_fuel_UI(fuel)
@@ -77,12 +49,10 @@ func use_fuel():
 	fuel -= 0.1
 	fuel = clamp(fuel, 0, 100)
 	get_parent().update_fuel_UI(fuel)
-	
 
 func _on_GameOverTimer_timeout():
 # warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/game_over_screen.tscn")
-
 
 func _on_Forward_button_down():
 	if fuel > 0:
@@ -90,3 +60,11 @@ func _on_Forward_button_down():
 		use_fuel()
 		for wheel in wheels:
 			wheel.angular_velocity = 50
+
+func _on_Backward_pressed():
+	if fuel > 0:
+		$GameOverTimer.stop()
+		apply_torque_impulse(-100 * 60)
+		use_fuel()
+		for wheel in wheels:
+			wheel.angular_velocity = -50

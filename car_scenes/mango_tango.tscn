@@ -54,7 +54,7 @@ editor_draw_drag_margin = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Forward" type="Button" parent="CanvasLayer"]
-margin_left = 1647.0
+margin_left = 1658.0
 margin_top = 705.0
 margin_right = 1848.0
 margin_bottom = 1033.0
@@ -76,5 +76,4 @@ normal = ExtResource( 4 )
 
 [connection signal="timeout" from="GameOverTimer" to="." method="_on_GameOverTimer_timeout"]
 [connection signal="button_down" from="CanvasLayer/Forward" to="." method="_on_Forward_button_down"]
-[connection signal="pressed" from="CanvasLayer/Forward" to="." method="_on_Forward_pressed"]
 [connection signal="pressed" from="CanvasLayer/Backward" to="." method="_on_Backward_pressed"]

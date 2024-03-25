@@ -258,7 +258,7 @@ Levelselectionmanager="*res://Scripts/levelselectionmanager.gd"
 Characterselectionmanager="*res://Scripts/characterselectionmanager.gd"
 SceneTransition="*res://Scenes/scene_transition.tscn"
 BackTransition="*res://Scenes/back_transition.tscn"
-MusicController="*res://music_controller.gd"
+MusicController="*res://Scripts/music_controller.gd"
 NextLevel="*res://Scripts/Next_level.gd"
 Globalscore="*res://Scripts/Globalscore.gd"
 

@@ -9,6 +9,7 @@ onready var parallax = $ParallaxBackground
 func _ready():
 	Globalscore.load_game()
 	Globalscore.load_level()
+#	MusicController.change_random_song()
 
 func _on_Start_pressed():
 	get_tree().change_scene("res://Scenes/level_test.tscn")
@@ -30,7 +31,3 @@ func _process(delta):
 	parallax.scroll_offset += direction * speed * delta
 	#direction = direction.rotated(rotation_speed * delta)
 
-#
-#
-#func _ready():
-#	MusicController.change_random_song()
