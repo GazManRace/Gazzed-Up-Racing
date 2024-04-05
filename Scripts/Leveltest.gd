@@ -42,7 +42,7 @@ func _ready():
 func _on_1_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_1.tscn")
-##
+
 func _on_2_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_2.tscn")
@@ -81,7 +81,7 @@ func _on_10_pressed():
 
 func _on_11_pressed():
 	if (Levelselectionmanager.level == null):
-		Levelselectionmanager.level = load("res://Levels/Levels/level_12.tscn")
+		Levelselectionmanager.level = load("res://Levels/Levels/level_11.tscn")
 
 func _on_12_pressed():
 	if (Levelselectionmanager.level == null):
@@ -101,17 +101,17 @@ func _on_15_pressed():
 
 func _on_16_pressed():
 	if (Levelselectionmanager.level == null):
-		Levelselectionmanager.level = load("res://Levels/Levels/level_1.tscn")
-
-func _on_17_pressed():
-	if (Levelselectionmanager.level == null):
-		Levelselectionmanager.level = load("res://Levels/Levels/level_1.tscn")
+		Levelselectionmanager.level = load("res://Levels/Levels/level_17.tscn")
 #
-#func _on_18_pressed():
+#func _on_17_pressed():
 #	if (Levelselectionmanager.level == null):
-#		Levelselectionmanager.level = level18
-
-
+#		Levelselectionmanager.level = load("res://Levels/Levels/level_1.tscn")
+##
+##func _on_18_pressed():
+##	if (Levelselectionmanager.level == null):
+##		Levelselectionmanager.level = level18
+#
+#
 
 func _on_Start_pressed():
 	SceneTransition.change_scene("res://Scenes/store_scene.tscn")

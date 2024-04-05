@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=2]
+[gd_scene load_steps=141 format=2]
 
 [ext_resource path="res://Scenes/sky_clouds.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=2]
@@ -15,12 +15,10 @@
 [ext_resource path="res://Scripts/level_1.gd" type="Script" id=13]
 [ext_resource path="res://Scenes/Next_Level_Indicator.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Collectables/fuel.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Scenes/Next-level.tscn" type="PackedScene" id=16]
 [ext_resource path="res://coins/golden1_coin.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=18]
 [ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=19]
 [ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=20]
-[ext_resource path="res://car_scenes/mango_tango.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Scenes/game_over_screen.tscn" type="PackedScene" id=22]
 
 [sub_resource type="Resource" id=157]
 script = ExtResource( 7 )
@@ -890,7 +888,7 @@ fill_mesh_offset = 0.0
 render_offset = 0.0
 
 [node name="level_1" type="Node2D"]
-position = Vector2( 3, 73 )
+position = Vector2( 4, 73 )
 script = ExtResource( 13 )
 
 [node name="Ground" type="Node2D" parent="."]
@@ -923,9 +921,7 @@ polygon = PoolVector2Array( -1680.71, 576.31, -1640.52, 460.796, -1591.14, 342.2
 visible = false
 
 [node name="body" parent="." instance=ExtResource( 14 )]
-position = Vector2( 121849, 11776 )
-
-[node name="Next_level" parent="." instance=ExtResource( 16 )]
+position = Vector2( 925, -193 )
 
 [node name="Coins" type="Node2D" parent="."]
 
@@ -1837,16 +1833,44 @@ rotation = -0.164994
 position = Vector2( 116115, -231.598 )
 rotation = -0.164994
 
-[node name="Fuel" type="Node2D" parent="."]
+[node name="Fuel" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3106, 1226 )
 
-[node name="Fuel" parent="Fuel" instance=ExtResource( 15 )]
-position = Vector2( 6011, 1819 )
+[node name="Fuel2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 9164, 724 )
 
-[node name="Fuel2" parent="Fuel" instance=ExtResource( 15 )]
-position = Vector2( 12508, 1463 )
+[node name="Fuel3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 19153, 1141 )
 
-[node name="player" parent="." instance=ExtResource( 21 )]
+[node name="Fuel4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 35514, 3254 )
 
-[node name="GameUI" parent="." instance=ExtResource( 18 )]
+[node name="Fuel5" parent="." instance=ExtResource( 15 )]
+position = Vector2( 49652, 2736 )
+
+[node name="Fuel6" parent="." instance=ExtResource( 15 )]
+position = Vector2( 80223, 7500 )
+
+[node name="Fuel7" parent="." instance=ExtResource( 15 )]
+position = Vector2( 101224, 5629 )
+
+[node name="Fuel8" parent="." instance=ExtResource( 15 )]
+position = Vector2( 116824, 12148 )
+
+[node name="Control" parent="." instance=ExtResource( 22 )]
+visible = false
+script = null
+
+[node name="Fuel9" parent="." instance=ExtResource( 15 )]
+position = Vector2( 59106, 1937 )
+
+[node name="Fuel10" parent="." instance=ExtResource( 15 )]
+position = Vector2( 96153, 8276 )
+
+[node name="Fuel11" parent="." instance=ExtResource( 15 )]
+position = Vector2( 30353, 1728 )
+
+[node name="Fuel12" parent="." instance=ExtResource( 15 )]
+position = Vector2( 71609, 4740 )
 
 [connection signal="body_entered" from="body" to="." method="_on_body_body_entered"]

@@ -14,8 +14,7 @@ var master_bus = AudioServer.get_bus_index("Master")
 
 
 func _on_Volume_pressed():
-	
 	AudioServer.set_bus_mute(master_bus, not AudioServer.is_bus_mute(master_bus))
 
 func _on_Back_pressed():
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	SceneTransition.change_scene("res://Scenes/main.tscn")

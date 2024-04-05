@@ -20,8 +20,8 @@ script = ExtResource( 1 )
 
 [node name="HomeBackground" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.74902 )
-position = Vector2( 2274.74, 1502.44 )
-scale = Vector2( 0.824451, 0.955849 )
+position = Vector2( 2001.24, 981.944 )
+scale = Vector2( 0.843463, 0.798591 )
 z_index = 22
 texture = ExtResource( 15 )
 

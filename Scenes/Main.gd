@@ -12,7 +12,7 @@ func _ready():
 #	MusicController.change_random_song()
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://Scenes/level_test.tscn")
+	SceneTransition.change_scene("res://Scenes/level_test.tscn")
 	
 func _on_Settings_pressed():
 	SceneTransition.change_scene("res://Scenes/settings_scene.tscn")

@@ -1,7 +1,7 @@
 extends Node2D
 onready var selectProgress = $Level/Node2D/GameUI/Fuel/Control/ProgressBar
 
-onready var next_screen = get_node("Next_level")
+#onready var next_screen = get_node("Next_level")
 
 onready var givenPlayer = Characterselectionmanager.player.instance()
 onready var givenLevel = Levelselectionmanager.level.instance()

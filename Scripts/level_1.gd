@@ -3,7 +3,7 @@ extends Node2D
 onready var pause_menu = $PauseMenu
 var paused = false
 onready var next_screen = get_node("Next_level")
-
+onready var cam = $player/Camera2D
 func _ready():
 	pass
 	#MusicController.audio_stream_player.stop()
@@ -17,6 +17,8 @@ func update_fuel_UI(value):
 
 func _on_body_body_entered(body):
 	if body.is_in_group("player"):
-		next_screen.show()
+		Characterselectionmanager.player = null
+		Levelselectionmanager.level = null
+		SceneTransition.change_scene("res://Scenes/Next-level.tscn")
 		print("Body Entered")
 

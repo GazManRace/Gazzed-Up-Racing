@@ -64,9 +64,9 @@ theme = ExtResource( 4 )
 text = "BACK"
 
 [node name="Start" type="Button" parent="."]
-margin_left = 1604.0
+margin_left = 1970.0
 margin_top = 18.0
-margin_right = 1898.0
+margin_right = 2264.0
 margin_bottom = 140.0
 theme = ExtResource( 4 )
 text = "Start"
@@ -201,20 +201,6 @@ margin_right = 2271.0
 margin_bottom = 543.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="17" type="Button" parent="control1/control"]
-margin_left = 2380.0
-margin_top = 398.0
-margin_right = 2788.0
-margin_bottom = 543.0
-rect_min_size = Vector2( 100, 100 )
-
-[node name="18" type="Button" parent="control1/control"]
-margin_left = 2872.0
-margin_top = 398.0
-margin_right = 3280.0
-margin_bottom = 543.0
-rect_min_size = Vector2( 100, 100 )
-
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="control1/control/1" to="." method="_on_1_pressed"]
@@ -233,5 +219,3 @@ rect_min_size = Vector2( 100, 100 )
 [connection signal="pressed" from="control1/control/14" to="." method="_on_14_pressed"]
 [connection signal="pressed" from="control1/control/15" to="." method="_on_15_pressed"]
 [connection signal="pressed" from="control1/control/16" to="." method="_on_16_pressed"]
-[connection signal="pressed" from="control1/control/17" to="." method="_on_17_pressed"]
-[connection signal="pressed" from="control1/control/18" to="." method="_on_18_pressed"]

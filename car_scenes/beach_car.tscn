@@ -7,38 +7,38 @@
 [ext_resource path="res://Assets/UI/brake_pedal.png" type="Texture" id=5]
 
 [node name="player" type="RigidBody2D" groups=["player"]]
-mass = 3.0
-gravity_scale = 2.0
+mass = 12.0
+gravity_scale = 9.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.11023, 0.11023 )
+scale = Vector2( 0.0669377, 0.0669377 )
 texture = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -10.9077, 21.8153 )
-scale = Vector2( 0.124748, 0.124748 )
+rotation = 0.0354208
+scale = Vector2( 0.125492, 0.130871 )
 polygon = PoolVector2Array( -566, 67, -588, 65, -598, 46, -566, 10, -598, 2, -622, -14, -628, -150, -637, -160, -592, -164, -571, -209, -524, -209, -515, -201, -539, -77, -511, -77, -279, -222, -200, -241, 36, -256, 101, -250, 142, -222, 220, -132, 333, -126, 442, -107, 574, -52, 629, -9, 633, 31, 622, 46, 571, 21, 512, 1, 448, 1, 395, 18, 357, 55, 327, 108, 310, 171, 310, 214, 329, 220, 339, 233, 331, 252, 67, 254, -88, 255, -211, 255, -230, 246, -228, 229, -203, 220, -211, 148, -230, 91, -254, 53, -288, 25, -343, 6, -415, 10, -479, 25, -539, 52 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="."]
-position = Vector2( 52, 46 )
+position = Vector2( 63, 28 )
 node_a = NodePath("..")
 node_b = NodePath("BCWheel_F")
 softness = 0.5
 
 [node name="BCWheel_F" parent="PinJoint2D" instance=ExtResource( 1 )]
 mass = 7.0
-gravity_scale = 3.0
+gravity_scale = 5.0
 
 [node name="PinJoint2D2" type="PinJoint2D" parent="."]
-position = Vector2( -59, 46 )
+position = Vector2( -52, 22 )
 node_a = NodePath("..")
 node_b = NodePath("BCWheel_R")
 softness = 0.5
 
 [node name="BCWheel_R" parent="PinJoint2D2" instance=ExtResource( 1 )]
 mass = 7.0
-gravity_scale = 3.0
+gravity_scale = 5.0
 
 [node name="GameOverTimer" type="Timer" parent="."]
 wait_time = 5.0
