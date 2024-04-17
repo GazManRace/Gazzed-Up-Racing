@@ -20,8 +20,8 @@ func change_random_song() -> void:
 	self.play()
 #	audio_stream_player.stream = songs[song]
 
-
-
-func _ready():
-	change_random_song()
-	
+#
+#
+#func _ready():
+#	change_random_song()
+#

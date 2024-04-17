@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Car Body/Orange Bro.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/UI/brake_pedal.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Head.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/UI/GazBodyTruly.png" type="Texture" id=7]
+[ext_resource path="res://Background Music/mango_tango_sound.mp3" type="AudioStream" id=8]
 
 [node name="player" type="RigidBody2D" groups=["player"]]
 mass = 13.0
@@ -85,6 +86,9 @@ normal = ExtResource( 5 )
 position = Vector2( 1888, 748 )
 scale = Vector2( 0.699115, 0.699115 )
 normal = ExtResource( 4 )
+
+[node name="Engine_sound_fx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
 
 [connection signal="timeout" from="GameOverTimer" to="." method="_on_GameOverTimer_timeout"]
 [connection signal="button_down" from="CanvasLayer/Forward" to="." method="_on_Forward_button_down"]

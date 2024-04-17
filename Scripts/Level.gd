@@ -9,8 +9,7 @@ onready var givenLevel = Levelselectionmanager.level.instance()
 func _ready():
 	spawn_level()
 	spawn_characters()
-	MusicController.stop()
-	
+#	MusicController.stop()
 
 func spawn_level():
 	add_child(givenLevel)

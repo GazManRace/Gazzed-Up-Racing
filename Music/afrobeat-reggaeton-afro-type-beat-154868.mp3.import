@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/afrobeat-reggaeton-afro-type-beat-154868.mp3-eae73cd4573acf60d86a872dd01ef15e.mp3str"
+
+[deps]
+
+source_file="res://Music/afrobeat-reggaeton-afro-type-beat-154868.mp3"
+dest_files=[ "res://.import/afrobeat-reggaeton-afro-type-beat-154868.mp3-eae73cd4573acf60d86a872dd01ef15e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
