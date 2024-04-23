@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=2]
+[gd_scene load_steps=145 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/sky_clouds.tscn" type="PackedScene" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://addons/rmsmartshape/materials/edge_material.gd" type="Script" id=19]
 [ext_resource path="res://addons/rmsmartshape/normal_range.gd" type="Script" id=20]
 [ext_resource path="res://Assets/UI/SoilProfiles/SoilEdgeA.png" type="Texture" id=21]
+[ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=22]
+[ext_resource path="res://car_scenes/bike.tscn" type="PackedScene" id=23]
 
 [sub_resource type="Resource" id=239]
 script = ExtResource( 6 )
@@ -2682,5 +2684,10 @@ position = Vector2( 254998, 17448 )
 stream = ExtResource( 16 )
 autoplay = true
 script = ExtResource( 3 )
+
+[node name="player" parent="." instance=ExtResource( 23 )]
+position = Vector2( -667, 773 )
+
+[node name="GameUI" parent="." instance=ExtResource( 22 )]
 
 [connection signal="body_entered" from="body" to="." method="_on_body_body_entered"]

@@ -15,7 +15,7 @@
 [ext_resource path="res://coins/golden1_coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Collectables/fuel.tscn" type="PackedScene" id=15]
-[ext_resource path="res://car_scenes/monster_truck.tscn" type="PackedScene" id=16]
+[ext_resource path="res://car_scenes/beach_car.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=17]
 [ext_resource path="res://addons/rmsmartshape/normal_range.gd" type="Script" id=18]
 [ext_resource path="res://addons/rmsmartshape/materials/edge_material.gd" type="Script" id=19]
@@ -2069,9 +2069,6 @@ visible = false
 
 [node name="Next_Level" parent="." instance=ExtResource( 12 )]
 
-[node name="player" parent="." instance=ExtResource( 16 )]
-position = Vector2( -101, 257 )
-
 [node name="GameUI" parent="." instance=ExtResource( 17 )]
 
 [node name="Fuel" parent="." instance=ExtResource( 15 )]
@@ -2117,5 +2114,8 @@ position = Vector2( 99914, 10070 )
 stream = ExtResource( 23 )
 autoplay = true
 script = ExtResource( 22 )
+
+[node name="player" parent="." instance=ExtResource( 16 )]
+position = Vector2( 25, 257 )
 
 [connection signal="body_entered" from="body" to="." method="_on_body_body_entered"]

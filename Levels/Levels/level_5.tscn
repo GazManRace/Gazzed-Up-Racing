@@ -15,7 +15,7 @@
 [ext_resource path="res://coins/golden1_coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Collectables/fuel.tscn" type="PackedScene" id=15]
-[ext_resource path="res://car_scenes/mango_tango.tscn" type="PackedScene" id=16]
+[ext_resource path="res://car_scenes/jungle_jammer_final.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=17]
 [ext_resource path="res://addons/rmsmartshape/normal_range.gd" type="Script" id=18]
 [ext_resource path="res://addons/rmsmartshape/materials/edge_material.gd" type="Script" id=19]
@@ -3327,9 +3327,6 @@ position = Vector2( 183650, 8679 )
 [node name="Fuel21" parent="." instance=ExtResource( 15 )]
 position = Vector2( 192887, 9370 )
 
-[node name="player" parent="." instance=ExtResource( 16 )]
-position = Vector2( -23, 457 )
-
 [node name="Fuel22" parent="." instance=ExtResource( 15 )]
 position = Vector2( 49640, 6493 )
 
@@ -3355,3 +3352,6 @@ position = Vector2( 102096, 9027 )
 stream = ExtResource( 23 )
 autoplay = true
 script = ExtResource( 22 )
+
+[node name="player" parent="." instance=ExtResource( 16 )]
+position = Vector2( -79, 403 )

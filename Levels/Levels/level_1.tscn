@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=2]
+[gd_scene load_steps=143 format=2]
 
 [ext_resource path="res://Scenes/sky_clouds.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/pause_menu.tscn" type="PackedScene" id=2]
@@ -15,9 +15,7 @@
 [ext_resource path="res://Scripts/level_1.gd" type="Script" id=13]
 [ext_resource path="res://Scenes/Next_Level_Indicator.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Collectables/fuel.tscn" type="PackedScene" id=15]
-[ext_resource path="res://car_scenes/mango_tango.tscn" type="PackedScene" id=16]
 [ext_resource path="res://coins/golden1_coin.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Scenes/GameUI.tscn" type="PackedScene" id=18]
 [ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=19]
 [ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Music/cinematic-documentary-115669.mp3" type="AudioStream" id=21]
@@ -1875,10 +1873,6 @@ position = Vector2( 30353, 1728 )
 
 [node name="Fuel12" parent="." instance=ExtResource( 15 )]
 position = Vector2( 71609, 4740 )
-
-[node name="player" parent="." instance=ExtResource( 16 )]
-
-[node name="GameUI" parent="." instance=ExtResource( 18 )]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 21 )

@@ -5,7 +5,7 @@ var speed = 60000
 var max_speed = 50
 var fuel = 100
 var game_over_screen 
-var driving = 0
+
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
 	get_parent().update_fuel_UI(fuel)
@@ -31,15 +31,10 @@ func _back(_delta):
 				wheel.angular_velocity = -35
 
 func _physics_process(delta):
-	driving = 0
 	game_over_fuel()
 	forward(delta)
 	_back(delta)
 	reset_rotation()
-	if driving == 1:
-		$Engine_sound_fx.pitch_scale = lerp($Engine_sound_fx.pitch_scale, 2, 1000)
-	else:
-		$Engine_sound_fx.pitch_scale = lerp($Engine_sound_fx.pitch_scale, 1, 1000)
 
 func reset_rotation():
 	if Input.is_action_pressed("ui_down"):  
@@ -65,7 +60,6 @@ func _on_GameOverTimer_timeout():
 
 func _on_Forward_button_down():
 	if fuel > 0:
-		$Engine_sound_fx.stream
 		self.apply_torque_impulse(20000)
 		$GameOverTimer.stop()
 		use_fuel()
@@ -74,7 +68,6 @@ func _on_Forward_button_down():
 
 func _on_Backward_pressed():
 	if fuel > 0:
-		driving += 1
 		self.apply_torque_impulse(-20000)
 		$GameOverTimer.stop()
 #		apply_torque_impulse(-100 * 60)
