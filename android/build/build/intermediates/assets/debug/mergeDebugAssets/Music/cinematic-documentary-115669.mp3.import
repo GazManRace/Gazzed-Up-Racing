@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cinematic-documentary-115669.mp3-f769ba531d3edf716af303d6e91ef7c3.mp3str"
+
+[deps]
+
+source_file="res://Music/cinematic-documentary-115669.mp3"
+dest_files=[ "res://.import/cinematic-documentary-115669.mp3-f769ba531d3edf716af303d6e91ef7c3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

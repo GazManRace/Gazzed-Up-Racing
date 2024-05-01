@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Coin Pickup Final.mp3-7819b584e897424648b208b5f450c338.mp3str"
+
+[deps]
+
+source_file="res://Assets/Soundfx/Coin Pickup Final.mp3"
+dest_files=[ "res://.import/Coin Pickup Final.mp3-7819b584e897424648b208b5f450c338.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

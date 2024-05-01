@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hot_rod_sound.mp3-22edc005caadd45b90069587066a1592.mp3str"
+
+[deps]
+
+source_file="res://Background Music/hot_rod_sound.mp3"
+dest_files=[ "res://.import/hot_rod_sound.mp3-22edc005caadd45b90069587066a1592.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

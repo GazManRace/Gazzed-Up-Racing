@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.godot.game-mergeDebugResources-16:/values-zh-rTW/values-zh-rTW.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Hp\\Desktop\\Gazzed Racing\\Gazzed-Up-Racing\\android\\build\\res\\values-zh-rTW\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "60",
+                        "endOffsets": "171"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "267",
+                        "endColumns": "63",
+                        "endOffsets": "326"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\9bcb1a65f5938aad264f4d73e9a06f28\\transformed\\core-1.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "1063",
+                        "endColumns": "100",
+                        "endOffsets": "1159"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\7b56efdca09ff3a987a12e8e3dacdc17\\transformed\\jetified-play-services-basement-17.6.0\\res\\values-zh-rTW\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "161",
+                        "endOffsets": "412"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "161",
+                        "endOffsets": "262"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\1a1d737312e3c1bcb637d1134185c8e7\\transformed\\jetified-play-services-ads-20.4.0\\res\\values-zh-rTW\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "203,262,326,376,450,504,573,635,667,712,742,772,806,847",
+                        "endColumns": "58,63,49,73,53,68,61,31,44,29,29,33,40,31",
+                        "endOffsets": "261,325,375,449,503,572,634,666,711,741,771,805,846,878"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "331,394,462,516,594,652,725,791,827,876,910,944,982,1027",
+                        "endColumns": "62,67,53,77,57,72,65,35,48,33,33,37,44,35",
+                        "endOffsets": "389,457,511,589,647,720,786,822,871,905,939,977,1022,1058"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tunetank.com_1217_rock-and-drive_by_rocknstock.mp3-21794dab448240207995ab4a409cbdc6.mp3str"
+
+[deps]
+
+source_file="res://Music/tunetank.com_1217_rock-and-drive_by_rocknstock.mp3"
+dest_files=[ "res://.import/tunetank.com_1217_rock-and-drive_by_rocknstock.mp3-21794dab448240207995ab4a409cbdc6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

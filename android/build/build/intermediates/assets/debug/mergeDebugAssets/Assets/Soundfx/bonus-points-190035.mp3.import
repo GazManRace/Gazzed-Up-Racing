@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bonus-points-190035.mp3-cf75440cc8f8714c250228354fb1db57.mp3str"
+
+[deps]
+
+source_file="res://Assets/Soundfx/bonus-points-190035.mp3"
+dest_files=[ "res://.import/bonus-points-190035.mp3-cf75440cc8f8714c250228354fb1db57.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/badge-coin-win-14675.mp3-0ee6ce77198dd27f200f335796d5f27c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Soundfx/badge-coin-win-14675.mp3"
+dest_files=[ "res://.import/badge-coin-win-14675.mp3-0ee6ce77198dd27f200f335796d5f27c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

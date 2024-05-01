@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Car Body/Jungle Jammer.png" type="Texture" id=2]
+[ext_resource path="res://Levels/Jungle Jammer/jungle_jammer_wheel.tscn" type="PackedScene" id=3]
+
+[node name="Jungle Jammer" type="RigidBody2D" groups=["player"]]
+mass = 2.0
+gravity_scale = 70.0
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -10, -63 )
+scale = Vector2( 0.520036, 0.520036 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -3.13161, -64.1979 )
+scale = Vector2( 0.364746, 0.372196 )
+polygon = PoolVector2Array( -1156, 334, -1206, 405, -1391, 405, -1448, 355, -1441, -236, -1391, -293, -1220, -293, -1156, -258, -1156, -8, -1006, -8, -928, -443, -679, -550, -472, -543, -272, -493, 284, -500, 526, -51, 928.184, -43.0134, 1231, -37, 1324, 42, 1360, 141, 1438, 270, 1296, 270, 1224, 213, 868, 199, 661, 469, 668, 526, -308, 533, -315, 484, -515, 206, -885, 191, -1056, 455, -1142, 455 )
+
+[node name="wheelholder" type="PinJoint2D" parent="."]
+position = Vector2( -259, 160 )
+node_a = NodePath("..")
+node_b = NodePath("RigidBody2D")
+softness = 2.0
+
+[node name="RigidBody2D" parent="wheelholder" instance=ExtResource( 3 )]
+position = Vector2( 3.05176e-05, 0 )
+mass = 0.5
+
+[node name="wheelholder2" type="PinJoint2D" parent="."]
+position = Vector2( 392, 153 )
+scale = Vector2( 0.995378, 0.997114 )
+node_a = NodePath("..")
+node_b = NodePath("RigidBody2D")
+softness = 2.0
+
+[node name="RigidBody2D" parent="wheelholder2" instance=ExtResource( 3 )]
+position = Vector2( 3.05176e-05, 0 )
+mass = 0.5
+
+[node name="GameOverTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+offset_h = 1.0
+drag_margin_left = 0.15
+editor_draw_drag_margin = true
+
+[connection signal="timeout" from="GameOverTimer" to="." method="_on_GameOverTimer_timeout"]

@@ -1,0 +1,88 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scenes/test scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/LevelManager.gd" type="Script" id=2]
+[ext_resource path="res://coins/silver_coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Collectables/goldencoin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://coins/bronze_coin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/FIRST STAGE.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/2ND STAGE.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/3rd STAGE.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Jungle level Textures/Level 1/Level 1 Colliders/4th stage.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Textures/Blue sky.png" type="Texture" id=11]
+
+[sub_resource type="PhysicsMaterial" id=1]
+rough = true
+
+[sub_resource type="PhysicsMaterial" id=2]
+rough = true
+
+[sub_resource type="PhysicsMaterial" id=3]
+rough = true
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 63, 190 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.647059 )
+position = Vector2( -31, -158 )
+scale = Vector2( 3.2381, 1.23906 )
+texture = ExtResource( 11 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Coin" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( -11256, -12 )
+
+[node name="Coin2" parent="Node" instance=ExtResource( 5 )]
+position = Vector2( -10881, 160 )
+
+[node name="Coin3" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( -10414, 255 )
+
+[node name="Coin4" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( -9891, 360 )
+
+[node name="Coin5" parent="Node" instance=ExtResource( 5 )]
+position = Vector2( -9496, 451 )
+
+[node name="Coin6" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( -9049, 547 )
+
+[node name="Coin7" parent="Node" instance=ExtResource( 6 )]
+position = Vector2( -8598, 570 )
+
+[node name="Coin8" parent="Node" instance=ExtResource( 5 )]
+position = Vector2( -4492, 1228 )
+
+[node name="Coin9" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( -7635, 596 )
+
+[node name="UI" parent="." instance=ExtResource( 4 )]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -12039, -134 )
+physics_material_override = SubResource( 1 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( -4935, 970 )
+physics_material_override = SubResource( 2 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -1287, 738 )
+physics_material_override = SubResource( 3 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1121, 890 )
+
+[node name="Car" parent="." groups=["player"] instance=ExtResource( 1 )]
+position = Vector2( -5181, 1033 )
+
+[node name="Camera2D" type="Camera2D" parent="Car"]
+current = true
+zoom = Vector2( 0.25, 0.25 )
+offset_h = 0.83
+drag_margin_right = 0.31
+editor_draw_drag_margin = true

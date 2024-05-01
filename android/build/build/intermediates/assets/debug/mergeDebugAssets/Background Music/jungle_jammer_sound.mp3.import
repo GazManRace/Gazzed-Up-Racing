@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jungle_jammer_sound.mp3-a1f78009329a3b2af7ae471789305872.mp3str"
+
+[deps]
+
+source_file="res://Background Music/jungle_jammer_sound.mp3"
+dest_files=[ "res://.import/jungle_jammer_sound.mp3-a1f78009329a3b2af7ae471789305872.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

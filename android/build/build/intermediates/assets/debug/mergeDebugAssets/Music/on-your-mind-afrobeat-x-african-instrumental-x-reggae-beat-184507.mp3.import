@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/on-your-mind-afrobeat-x-african-instrumental-x-reggae-beat-184507.mp3-1dbb697a9a3f1b64c06bbb2a725cde3a.mp3str"
+
+[deps]
+
+source_file="res://Music/on-your-mind-afrobeat-x-african-instrumental-x-reggae-beat-184507.mp3"
+dest_files=[ "res://.import/on-your-mind-afrobeat-x-african-instrumental-x-reggae-beat-184507.mp3-1dbb697a9a3f1b64c06bbb2a725cde3a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

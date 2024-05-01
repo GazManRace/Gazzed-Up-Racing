@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tunetank.com_3549_street-sound_by_99instrumentals.mp3-daf4832bc0509e01307984424f41ad70.mp3str"
+
+[deps]
+
+source_file="res://Music/tunetank.com_3549_street-sound_by_99instrumentals.mp3"
+dest_files=[ "res://.import/tunetank.com_3549_street-sound_by_99instrumentals.mp3-daf4832bc0509e01307984424f41ad70.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

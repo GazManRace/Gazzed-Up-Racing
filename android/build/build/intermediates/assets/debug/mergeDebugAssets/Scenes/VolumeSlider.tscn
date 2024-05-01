@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="HSlider" type="HSlider"]
+margin_right = 200.0
+margin_bottom = 16.0

@@ -1,0 +1,221 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/UI/Bangers.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Grabber.tres" type="StyleBox" id=2]
+[ext_resource path="res://Scenes/parallax_background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/theme.tres" type="Theme" id=4]
+[ext_resource path="res://Scripts/Leveltest.gd" type="Script" id=5]
+[ext_resource path="res://Assets/UI/backgroundSS.png" type="Texture" id=6]
+
+[sub_resource type="ImageTexture" id=26]
+
+[sub_resource type="Theme" id=27]
+HScrollBar/icons/decrement = SubResource( 26 )
+HScrollBar/icons/decrement_highlight = SubResource( 26 )
+HScrollBar/icons/decrement_pressed = SubResource( 26 )
+HScrollBar/icons/increment = SubResource( 26 )
+HScrollBar/icons/increment_highlight = SubResource( 26 )
+HScrollBar/icons/increment_pressed = SubResource( 26 )
+HScrollBar/styles/grabber = ExtResource( 2 )
+HScrollBar/styles/grabber_highlight = ExtResource( 2 )
+HScrollBar/styles/grabber_pressed = ExtResource( 2 )
+HScrollBar/styles/scroll = null
+HScrollBar/styles/scroll_focus = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 82
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="BackgroundSs" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1197, 738 )
+scale = Vector2( 0.509251, 0.509251 )
+texture = ExtResource( 6 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
+layer = -50
+
+[node name="HScrollBar" type="HScrollBar" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 44.0
+margin_top = -96.0
+margin_right = 18.0
+margin_bottom = -18.0
+theme = SubResource( 27 )
+max_value = 3000.0
+page = 100.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 34.0
+margin_top = 18.0
+margin_right = 328.0
+margin_bottom = 140.0
+theme = ExtResource( 4 )
+text = "BACK"
+
+[node name="Start" type="Button" parent="."]
+margin_left = 1970.0
+margin_top = 18.0
+margin_right = 2264.0
+margin_bottom = 140.0
+theme = ExtResource( 4 )
+text = "Start"
+
+[node name="control1" type="Node2D" parent="."]
+
+[node name="control" type="Control" parent="control1"]
+margin_right = 40.0
+margin_bottom = 40.0
+theme = ExtResource( 4 )
+
+[node name="1" type="Button" parent="control1/control"]
+margin_left = 304.0
+margin_top = 235.0
+margin_right = 712.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+theme = ExtResource( 4 )
+custom_fonts/font = SubResource( 25 )
+text = "1"
+
+[node name="2" type="Button" parent="control1/control"]
+margin_left = 821.0
+margin_top = 235.0
+margin_right = 1229.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+
+[node name="3" type="Button" parent="control1/control"]
+margin_left = 1313.0
+margin_top = 235.0
+margin_right = 1721.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+
+[node name="4" type="Button" parent="control1/control"]
+margin_left = 304.0
+margin_top = 398.0
+margin_right = 712.0
+margin_bottom = 543.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="5" type="Button" parent="control1/control"]
+margin_left = 821.0
+margin_top = 398.0
+margin_right = 1229.0
+margin_bottom = 543.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="6" type="Button" parent="control1/control"]
+margin_left = 1313.0
+margin_top = 398.0
+margin_right = 1721.0
+margin_bottom = 543.0
+rect_min_size = Vector2( 100, 100 )
+theme = ExtResource( 4 )
+
+[node name="7" type="Button" parent="control1/control"]
+margin_left = 304.0
+margin_top = 556.0
+margin_right = 712.0
+margin_bottom = 701.0
+rect_min_size = Vector2( 408, 145 )
+theme = ExtResource( 4 )
+
+[node name="8" type="Button" parent="control1/control"]
+margin_left = 821.0
+margin_top = 556.0
+margin_right = 1229.0
+margin_bottom = 701.0
+rect_min_size = Vector2( 408, 145 )
+theme = ExtResource( 4 )
+
+[node name="9" type="Button" parent="control1/control"]
+margin_left = 1313.0
+margin_top = 556.0
+margin_right = 1721.0
+margin_bottom = 701.0
+rect_min_size = Vector2( 408, 145 )
+theme = ExtResource( 4 )
+
+[node name="10" type="Button" parent="control1/control"]
+margin_left = 304.0
+margin_top = 719.0
+margin_right = 712.0
+margin_bottom = 864.0
+rect_min_size = Vector2( 100, 100 )
+theme = ExtResource( 4 )
+
+[node name="11" type="Button" parent="control1/control"]
+margin_left = 821.0
+margin_top = 719.0
+margin_right = 1229.0
+margin_bottom = 864.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="12" type="Button" parent="control1/control"]
+margin_left = 1313.0
+margin_top = 719.0
+margin_right = 1721.0
+margin_bottom = 864.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="13" type="Button" parent="control1/control"]
+margin_left = 1863.0
+margin_top = 235.0
+margin_right = 2271.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+theme = ExtResource( 4 )
+custom_fonts/font = SubResource( 25 )
+text = "1"
+
+[node name="14" type="Button" parent="control1/control"]
+margin_left = 2380.0
+margin_top = 235.0
+margin_right = 2788.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+
+[node name="15" type="Button" parent="control1/control"]
+margin_left = 2872.0
+margin_top = 235.0
+margin_right = 3280.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 408, 145 )
+
+[node name="16" type="Button" parent="control1/control"]
+margin_left = 1863.0
+margin_top = 398.0
+margin_right = 2271.0
+margin_bottom = 543.0
+rect_min_size = Vector2( 100, 100 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="control1/control/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="control1/control/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="control1/control/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="control1/control/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="control1/control/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="control1/control/6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="control1/control/7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="control1/control/8" to="." method="_on_8_pressed"]
+[connection signal="pressed" from="control1/control/9" to="." method="_on_9_pressed"]
+[connection signal="pressed" from="control1/control/10" to="." method="_on_10_pressed"]
+[connection signal="pressed" from="control1/control/11" to="." method="_on_11_pressed"]
+[connection signal="pressed" from="control1/control/12" to="." method="_on_12_pressed"]
+[connection signal="pressed" from="control1/control/13" to="." method="_on_13_pressed"]
+[connection signal="pressed" from="control1/control/14" to="." method="_on_14_pressed"]
+[connection signal="pressed" from="control1/control/15" to="." method="_on_15_pressed"]
+[connection signal="pressed" from="control1/control/16" to="." method="_on_16_pressed"]

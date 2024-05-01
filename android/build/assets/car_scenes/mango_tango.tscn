@@ -1,0 +1,95 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Car Body/Orange Bro.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/mango_tango_tire.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/UI/gas_pedal.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/brake_pedal.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Head.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/UI/GazBodyTruly.png" type="Texture" id=7]
+[ext_resource path="res://Background Music/mango_tango_sound.mp3" type="AudioStream" id=8]
+
+[node name="player" type="RigidBody2D" groups=["player"]]
+mass = 13.0
+gravity_scale = 6.0
+script = ExtResource( 1 )
+
+[node name="Head" parent="." instance=ExtResource( 6 )]
+position = Vector2( -5, -35 )
+
+[node name="Body" type="Sprite" parent="."]
+position = Vector2( -10, -22 )
+scale = Vector2( 0.0405568, 0.0377223 )
+texture = ExtResource( 7 )
+
+[node name="CarBody" type="Sprite" parent="."]
+scale = Vector2( 0.0702489, 0.0702489 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 1.9987, 1.9987 )
+polygon = PoolVector2Array( -32, 7, -36, 7, -35, 5, -35, 4, -32, -2, -27, -6, -27, -9, -12, -7, 8, -7, 9, -7, 5, -14, 5, -16, 11, -8, 14, -8, 19, -7, 26, -4, 28, -3, 30, -3, 33, 2, 36, 3, 36, 5, 32, 6, 30, 6, 28, 2, 25, -1, 20, -1, 16, 2, 16, 8, 14, 9, 11, 8, -14, 8, -16, 2, -19, -1, -25, -1, -28, 1 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2( -46, 17 )
+node_a = NodePath("..")
+node_b = NodePath("RigidBody2D")
+softness = 0.3
+
+[node name="RigidBody2D" parent="PinJoint2D" instance=ExtResource( 3 )]
+mass = 11.0
+gravity_scale = 8.0
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="."]
+position = Vector2( 46, 17 )
+node_a = NodePath("..")
+node_b = NodePath("RigidBody2D")
+softness = 0.3
+
+[node name="RigidBody2D" parent="PinJoint2D2" instance=ExtResource( 3 )]
+mass = 10.0
+gravity_scale = 6.0
+
+[node name="GameOverTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 80, 0 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+offset_h = 1.0
+drag_margin_left = 0.15
+editor_draw_drag_margin = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Forward" type="Button" parent="CanvasLayer"]
+margin_left = 1899.0
+margin_top = 808.0
+margin_right = 2024.0
+margin_bottom = 1039.0
+action_mode = 0
+
+[node name="Backward" type="Button" parent="CanvasLayer"]
+margin_left = 49.0
+margin_top = 928.0
+margin_right = 257.0
+margin_bottom = 1040.0
+
+[node name="Backward2" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 19, 919 )
+scale = Vector2( 0.615741, 0.615741 )
+normal = ExtResource( 5 )
+
+[node name="Backward3" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 1888, 748 )
+scale = Vector2( 0.699115, 0.699115 )
+normal = ExtResource( 4 )
+
+[node name="Engine_sound_fx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[connection signal="timeout" from="GameOverTimer" to="." method="_on_GameOverTimer_timeout"]
+[connection signal="button_down" from="CanvasLayer/Forward" to="." method="_on_Forward_button_down"]
+[connection signal="pressed" from="CanvasLayer/Backward" to="." method="_on_Backward_pressed"]

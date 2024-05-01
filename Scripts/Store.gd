@@ -104,5 +104,3 @@ func _on_DirtMaster3000_pressed():
 			Characterselectionmanager.player = load("res://car_scenes/bike.tscn")
 
 
-
-

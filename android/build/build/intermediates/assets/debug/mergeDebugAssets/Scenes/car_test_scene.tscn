@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/test scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -5654, 75, -4724, 3214, 1281, 6662, 16935, 7282, 18873, -1591, 17478, -312, 13564, 1277, 10620, 1780, 7132, 1587, 4086, 475, 3495, 672, 1397, 672, 320, 661 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -5693, 75, -4763, 3214, 1204, 6662, 16897, 7282, 18912, -1552, 17439, -312, 13836, 1122, 10813, 1819, 7287, 1625, 4188, 385, 3606, 618, 119, 657 )
+
+[node name="Car" parent="." instance=ExtResource( 1 )]
+position = Vector2( -5044, -25 )
+rotation = 0.122994
+
+[node name="Camera2D" type="Camera2D" parent="Car"]
+current = true
+
+[node name="UI" parent="." instance=ExtResource( 2 )]

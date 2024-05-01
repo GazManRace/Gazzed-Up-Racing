@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rock and drive.mp3-fea1e4103385989224d58ca73d098abf.mp3str"
+
+[deps]
+
+source_file="res://Music/rock and drive.mp3"
+dest_files=[ "res://.import/rock and drive.mp3-fea1e4103385989224d58ca73d098abf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
