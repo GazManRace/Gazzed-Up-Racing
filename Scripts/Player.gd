@@ -5,13 +5,13 @@ var speed = 60000
 var max_speed = 50
 var fuel = 100
 var game_over_screen 
-
+var dead = false
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
 	get_parent().update_fuel_UI(fuel)
 
 func forward(delta):
-	if fuel > 0:
+	if fuel > 0 && !dead :
 		$GameOverTimer.stop()
 		if Input.get_action_strength("ui_right"):
 			self.apply_torque_impulse(-6000)
@@ -20,6 +20,9 @@ func forward(delta):
 				wheel.angular_velocity = 35
 			var car_distance = int(self.position.x/100)
 			print(car_distance)
+	else:
+		if self.rotation_degrees > 90 || self.rotation_degrees < -90 && !dead:
+			dead = true
 
 func _back(delta):
 	if fuel > 0:
@@ -29,6 +32,10 @@ func _back(delta):
 			use_fuel(delta)
 			for wheel in wheels:
 				wheel.angular_velocity = -35
+	else:
+		if self.rotation_degrees > 90 || self.rotation_degrees < -90 && !dead:
+			dead = true
+
 
 func _physics_process(delta):
 	game_over_fuel()
