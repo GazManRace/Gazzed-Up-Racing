@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Beach Car.png-eadbef53e99ec60893ae6365fd17f98e.stex"
+path="res://.import/Beach Car.png-acd4181fba1b83ff4f5704a7322b60e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Car Body/Beach Car.png"
-dest_files=[ "res://.import/Beach Car.png-eadbef53e99ec60893ae6365fd17f98e.stex" ]
+source_file="res://Assets/car body/Beach Car.png"
+dest_files=[ "res://.import/Beach Car.png-acd4181fba1b83ff4f5704a7322b60e3.stex" ]
 
 [params]
 

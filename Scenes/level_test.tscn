@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/UI/Bangers.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scenes/Grabber.tres" type="StyleBox" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/theme.tres" type="Theme" id=4]
 [ext_resource path="res://Scripts/Leveltest.gd" type="Script" id=5]
 [ext_resource path="res://Assets/UI/backgroundSS.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/next.png" type="Texture" id=7]
 
 [sub_resource type="ImageTexture" id=26]
 
@@ -200,6 +201,12 @@ margin_top = 398.0
 margin_right = 2271.0
 margin_bottom = 543.0
 rect_min_size = Vector2( 100, 100 )
+
+[node name="signalshow" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1859, 80 )
+scale = Vector2( 0.0520979, 0.0520979 )
+texture = ExtResource( 7 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]

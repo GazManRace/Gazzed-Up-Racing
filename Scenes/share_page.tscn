@@ -21,7 +21,6 @@ anchor_bottom = 1.0
 script = ExtResource( 12 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 13 )]
-layer = 1
 
 [node name="BG" type="CanvasLayer" parent="."]
 layer = -100
@@ -35,30 +34,30 @@ texture = ExtResource( 14 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="SocialAccounts" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 1067, 131.014 )
+position = Vector2( 1350, 131.014 )
 scale = Vector2( 0.286891, 0.286891 )
 texture = ExtResource( 3 )
 
 [node name="Instagram" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 770, 292 )
+position = Vector2( 1072, 292 )
 scale = Vector2( 0.525525, 0.524648 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
 
 [node name="Twitter" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 770, 493 )
+position = Vector2( 1072, 493 )
 scale = Vector2( 0.525525, 0.524648 )
 normal = ExtResource( 4 )
 pressed = ExtResource( 5 )
 
 [node name="Facebook" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 770, 705 )
+position = Vector2( 1072, 705 )
 scale = Vector2( 0.525525, 0.524648 )
 normal = ExtResource( 8 )
 pressed = ExtResource( 6 )
 
 [node name="Threads" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 770, 886 )
+position = Vector2( 1072, 886 )
 scale = Vector2( 0.525525, 0.524648 )
 normal = ExtResource( 7 )
 pressed = ExtResource( 11 )

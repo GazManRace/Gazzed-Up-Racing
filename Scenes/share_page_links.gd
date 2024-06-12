@@ -24,4 +24,4 @@ func _on_Twitter_pressed():
 func _on_Facebook_pressed():
 	OS.shell_open("https://www.facebook.com/profile.php?id=61554096129368&mibextid=ZbWKwL")
 func _on_Back_pressed():
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	SceneTransition.change_scene("res://Scenes/main.tscn")

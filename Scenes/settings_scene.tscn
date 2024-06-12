@@ -36,7 +36,7 @@ texture = ExtResource( 1 )
 script = ExtResource( 4 )
 
 [node name="Volume" type="TouchScreenButton" parent="."]
-position = Vector2( 847, 431 )
+position = Vector2( 1076, 431 )
 scale = Vector2( 0.184739, 0.184739 )
 normal = ExtResource( 11 )
 pressed = ExtResource( 6 )

@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/UI/brake_pedal.png" type="Texture" id=5]
 
 [node name="player" type="RigidBody2D" groups=["player"]]
-mass = 12.0
+mass = 14.0
 gravity_scale = 6.0
 script = ExtResource( 1 )
 
@@ -28,7 +28,7 @@ softness = 0.5
 
 [node name="wheel" parent="wheelholder" instance=ExtResource( 3 )]
 position = Vector2( 3.05176e-05, 0 )
-mass = 8.0
+mass = 9.0
 script = null
 
 [node name="wheelholder2" type="PinJoint2D" parent="."]
@@ -40,7 +40,7 @@ softness = 0.5
 
 [node name="wheel" parent="wheelholder2" instance=ExtResource( 3 )]
 position = Vector2( 3.05176e-05, 0 )
-mass = 7.0
+mass = 9.0
 script = null
 
 [node name="GameOverTimer" type="Timer" parent="."]
@@ -56,6 +56,7 @@ drag_margin_left = 0.15
 editor_draw_drag_margin = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Forward" type="Button" parent="CanvasLayer"]
 margin_left = 1658.0

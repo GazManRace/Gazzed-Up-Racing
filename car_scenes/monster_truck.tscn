@@ -53,6 +53,7 @@ drag_margin_left = 0.15
 editor_draw_drag_margin = true
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Forward" type="Button" parent="CanvasLayer2"]
 margin_left = 1967.0

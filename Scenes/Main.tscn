@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/main.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/StartHover.png" type="Texture" id=2]
@@ -8,9 +8,11 @@
 [ext_resource path="res://Scenes/parallax_background.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/UI/StartIdle.png" type="Texture" id=7]
 [ext_resource path="res://Assets/UI/Gazzed up title.png" type="Texture" id=8]
+[ext_resource path="res://Music/buttonsound.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Assets/UI/Shop hovered.png" type="Texture" id=10]
-[ext_resource path="res://Assets/UI/Shop.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/howtoplay.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/UI/share idle.png" type="Texture" id=13]
+[ext_resource path="res://Assets/UI/info.png" type="Texture" id=14]
 [ext_resource path="res://Assets/UI/Gradient background.png" type="Texture" id=15]
 
 [node name="Main" type="Node2D"]
@@ -23,6 +25,9 @@ position = Vector2( 2001.24, 981.944 )
 scale = Vector2( 0.843463, 0.798591 )
 z_index = 22
 texture = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 6 )]
 
@@ -35,40 +40,54 @@ scale = Vector2( 0.268884, 0.273382 )
 texture = ExtResource( 8 )
 
 [node name="Start" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 1908, 830 )
+position = Vector2( 1908, 926 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 7 )
 pressed = ExtResource( 2 )
 action = "Enter"
 
-[node name="Shop" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 1471, 832 )
-scale = Vector2( 0.63828, 0.63828 )
-normal = ExtResource( 11 )
-action = "Enter"
-
 [node name="Settings" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 1009, 844 )
+position = Vector2( 1255, 940 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 3 )
 action = "Enter"
 
 [node name="Share" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 527, 832 )
+position = Vector2( 620, 941 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 13 )
 pressed = ExtResource( 10 )
 action = "Enter"
 
 [node name="Quit" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 38, 837 )
+position = Vector2( 38, 933 )
 scale = Vector2( 0.63828, 0.63828 )
 normal = ExtResource( 4 )
 pressed = ExtResource( 5 )
 action = "Enter"
 
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+margin_left = 2195.0
+margin_top = 32.0
+margin_right = 2309.0
+margin_bottom = 146.0
+texture_normal = ExtResource( 14 )
+expand = true
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = 1.0
+bus = "Music"
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="howtoplay" parent="." instance=ExtResource( 11 )]
+visible = false
+
 [connection signal="pressed" from="CanvasLayer/Start" to="." method="_on_Start_pressed"]
-[connection signal="pressed" from="CanvasLayer/Shop" to="." method="_on_Shop_pressed"]
 [connection signal="pressed" from="CanvasLayer/Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="CanvasLayer/Share" to="." method="_on_Share_pressed"]
 [connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_infoButton_pressed"]
