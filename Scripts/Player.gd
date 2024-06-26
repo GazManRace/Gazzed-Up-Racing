@@ -41,11 +41,11 @@ func _physics_process(delta):
 	game_over_fuel()
 	forward(delta)
 	_back(delta)
-#	reset_rotation()
+	reset_rotation()
 
-#func reset_rotation():
-#	if Input.is_action_pressed("ui_down"):  
-#		self.rotation_degrees = 0
+func reset_rotation():
+	if Input.is_action_pressed("ui_down"):  
+		self.rotation_degrees = 0
 
 func refuel():
 	fuel = 100

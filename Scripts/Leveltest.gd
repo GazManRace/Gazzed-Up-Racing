@@ -17,8 +17,6 @@ func _process(delta):
 
 onready var arrow_signal = $signalshow
 
-func signal_to_next():
-	arrow_signal.show()
 
 func _ready():
 	for i in $control1/control.get_children():
@@ -31,9 +29,6 @@ func _ready():
 			level.connect('pressed', self, 'change_level', [level.name])
 		else:
 			level.disabled = true
-#
-#func change_level(lvl_no):
-#	SceneTransition.change_scene("res://Levels/Levels/level"+ lvl_no +".tscn")
 
 #
 #
@@ -44,82 +39,82 @@ func _ready():
 func _on_1_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_1.tscn")
-		signal_to_next()
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_2_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_2.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_3_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_3.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_4_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_4.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 ##
 func _on_5_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_5.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 ##
 func _on_6_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_6.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_7_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_7.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_8_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_8.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_9_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_9.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_10_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_10.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_11_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_11.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_12_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_13.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_13_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_14.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 func _on_14_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_15.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_15_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_16.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 func _on_16_pressed():
 	if (Levelselectionmanager.level == null):
 		Levelselectionmanager.level = load("res://Levels/Levels/level_17.tscn")
-		
+		SceneTransition.change_scene("res://Scenes/Level.tscn")
 #
 #func _on_17_pressed():
 #	if (Levelselectionmanager.level == null):
@@ -132,7 +127,7 @@ func _on_16_pressed():
 #
 
 func _on_Start_pressed():
-	SceneTransition.change_scene("res://Scenes/store_scene.tscn")
+	SceneTransition.change_scene("res://Scenes/Level.tscn")
 
 
 func _on_Button_pressed():

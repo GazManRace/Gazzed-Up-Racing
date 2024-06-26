@@ -66,11 +66,12 @@ func _on_Back_pressed():
 	SceneTransition.change_scene("res://Scenes/main.tscn")
 
 func _on_Next_pressed():
-	SceneTransition.change_scene("res://Scenes/Level.tscn")
+	SceneTransition.change_scene("res://Scenes/level_test.tscn")
 
 func _on_MangoTango_pressed():
 	if (Characterselectionmanager.player == null):
 		Characterselectionmanager.player = load("res://car_scenes/mango_tango.tscn")
+		SceneTransition.change_scene("res://Scenes/level_test.tscn")
 		
 	
 	
@@ -78,41 +79,42 @@ func _on_JungleJammer_pressed():
 		_buy(priceJJ, 1, buttonJJ)#, car_scene1)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/jungle_jammer_final.tscn")
-			
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 	
 	
 func _on_BeachBugger_pressed():
 		_buy(priceBB, 2, buttonBB)#, car_scene2)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/beach_car.tscn")
-			
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 #
 
 func _on_KaDukaSpeed_pressed():
 		_buy(priceKD, 3, buttonKD)#, car_scene3)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/african_car.tscn")
-			
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 
 
 func _on_MonsterTruck_pressed():
 		_buy(priceMT, 4, buttonMT)#, car_scene4)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/monster_truck.tscn")
-			
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 
 
 func _on_TheHotRod_pressed():
 		_buy(priceHR, 5, butttonHR)#, car_scene5)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/the_hot_rod.tscn")
-			
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 
 
 func _on_DirtMaster3000_pressed():
 		_buy(priceB, 6, buttonB)#, car_scene6)
 		if (Characterselectionmanager.player == null):
 			Characterselectionmanager.player = load("res://car_scenes/bike.tscn")
+			SceneTransition.change_scene("res://Scenes/level_test.tscn")
 
 func _on_TextureButton_pressed():
 	$ColorRect.hide()
