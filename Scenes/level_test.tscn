@@ -65,6 +65,7 @@ theme = ExtResource( 4 )
 text = "BACK"
 
 [node name="Start" type="Button" parent="."]
+visible = false
 margin_left = 1970.0
 margin_top = 18.0
 margin_right = 2264.0

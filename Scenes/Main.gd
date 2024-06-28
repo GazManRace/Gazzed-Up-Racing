@@ -19,7 +19,7 @@ func button_sound():
 
 func _on_Start_pressed():
 	button_sound()
-	SceneTransition.change_scene("res://Scenes/store_scene.tscn")
+	SceneTransition.change_scene("res://Scenes/level_test.tscn")
 	
 	
 func _on_Settings_pressed():
