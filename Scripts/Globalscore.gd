@@ -46,7 +46,7 @@ func load_game():
 	var data = save_file.get_var()
 	coins_collected = data['Coins']
 	save_file.close()
-#
+
 var store = {
 			'bought' : [true, false, false, false, false, false, false]
 }

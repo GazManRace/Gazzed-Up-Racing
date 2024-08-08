@@ -1,5 +1,5 @@
 extends Node2D
-onready var selectProgress = $Level/Node2D/GameUI/Fuel/Control/ProgressBar
+#onready var selectProgress = $Level/Node2D/GameUI/Fuel/Control/ProgressBar
 
 #onready var next_screen = get_node("Next_level")
 

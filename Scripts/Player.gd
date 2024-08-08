@@ -56,7 +56,7 @@ func game_over_fuel():
 		$GameOverTimer.start()
 
 func use_fuel(delta):
-	fuel -= 8.5 * delta
+	fuel -= 8.0 * delta
 	fuel = clamp(fuel, 0, 100)
 	get_parent().update_fuel_UI(fuel)
 

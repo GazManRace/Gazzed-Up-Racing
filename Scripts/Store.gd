@@ -66,7 +66,7 @@ func _on_Back_pressed():
 	SceneTransition.change_scene("res://Scenes/main.tscn")
 
 func _on_Next_pressed():
-	SceneTransition.change_scene("res://Scenes/Level.tscn")
+	SceneTransition.change_scene("res://Scenes/how_to_play.tscn")
 
 func _on_MangoTango_pressed():
 	if (Characterselectionmanager.player == null):

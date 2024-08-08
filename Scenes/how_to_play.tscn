@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/UI/G's.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Gradient background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/howtoplay.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/ArrowsIdle.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/how_to_play.gd" type="Script" id=5]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 153.0
+script = ExtResource( 5 )
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 2478.0
+margin_bottom = 1485.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="G\'s" type="TextureRect" parent="."]
+margin_right = 2470.0
+margin_bottom = 1373.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="howtoplay" type="TextureRect" parent="."]
+margin_left = 431.0
+margin_top = 243.0
+margin_right = 1962.0
+margin_bottom = 988.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="back_button" type="TextureButton" parent="."]
+margin_left = 331.0
+margin_top = 241.0
+margin_right = 580.0
+margin_bottom = 412.0
+rect_rotation = 180.0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="next_button" type="TextureButton" parent="."]
+margin_left = 2076.0
+margin_top = 60.0
+margin_right = 2325.0
+margin_bottom = 231.0
+rect_rotation = 359.999
+texture_normal = ExtResource( 4 )
+expand = true
+
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="next_button" to="." method="_on_next_button_pressed"]
